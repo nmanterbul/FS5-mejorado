@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+}
+
+.contenedor{
+    height: 78vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+
+}
+/*CABECERA (COMÚN A TODOS)*/
+    .cabecera{
+        display: flex;
+        height: 11vh;
+        border-bottom: solid rgba(23,23,77);
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .cabecera h1{
+        color: rgba(23, 23, 77);
+        border-radius: 15px;
+        border: solid rgba(23, 23, 77);
+        text-align: center;
+        align-content: center;
+        font-size: 50px;
+    }
+    .logo img{
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        right: 15px;
+    }
+    .backButton img{
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        left: 15px;
+    }
+    /*-------------------------------*/
+    .contenido img{
+        width: 50%;
+        border-radius: 100%;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 15px;
+    }
+.nombre{
+    width: 60%;
+    color:rgba(23,23,77);
+    font-size: 60px;
+    border: solid black;
+    text-align: center;
+
+}
+
+.Titulo{
+    text-align: center;
+    font-size: 45px;
+    color: rgba(23,23,77);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.Formulario{
+    position: relative;
+    border: 2px solid black;
+    padding: 50px 20px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+
+}
+
+.campo{
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.campo input{
+    width: 100%;
+    padding: 12px 45px 12px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.campo img {
+    position: absolute;
+    right: 5px;
+    top: 60%;
+    width: 40px;
+}
+
+
+
+.Login input{
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    color:#fff;
+    background-color: rgb(219, 53, 81);
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+
+
+}
+
+.Login input:hover {
+    background-color: rgb(200,40,65);
+}
+ .campo span {
+        position: absolute;
+        right: 10px;
+        top: 35%;
+        font-size: 28px;
+ }
+
+/*FOOTER(COMÚN A TODOS)*/
+    .pie{
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: solid rgba(23,23,77);
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+        font-size: 1.75vh;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .contacto{
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+    }
+    .rrss img{
+        width: 3vw;
+    }
+    /*-------------------------------*/

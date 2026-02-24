@@ -1,6 +1,8 @@
 package edu.masanz.FS5;
 
+
 import edu.masanz.FS5.controller.FS5controller;
+import edu.masanz.FS5.database.ConnectionManager;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -21,19 +23,27 @@ public class Main {
         logger.info("ARRANCANDO APLICACION");
 
         Javalin app = Javalin.create(config -> {
-            config.staticFiles.add("public");
+            config.staticFiles.add("public_css");
             config.fileRenderer(new JavalinFreemarker());
         }).start(8080);
 
-        // PRINCIPAL
-        app.get("/", FS5controller::servirIndex);
 
-        app.get("/login", FS5controller::servirLogin);
-        app.get("/competicionesIndex", FS5controller::servirCompeticionesIndex);
+
+        // PRINCIPAL
+        app.get("/", Main::ejemplo);
+        app.get("/Login", FS5controller::login);
+
+
 
 
     }
 
 
+
+    private static void ejemplo(@NotNull Context context) {
+
+        Map<String,Object> model = new HashMap<>();
+        context.render("/templates/index.ftl",model);
+    }
 
 }

@@ -1,7 +1,5 @@
 package edu.masanz.FS5;
 
-
-import edu.masanz.FS5.database.ConnectionManager;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -9,6 +7,7 @@ import io.javalin.rendering.template.JavalinFreemarker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
+import edu.masanz.FS5.controller.FS5controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,23 +21,23 @@ public class Main {
         logger.info("ARRANCANDO APLICACION");
 
         Javalin app = Javalin.create(config -> {
-            config.staticFiles.add("public_css");
+            config.staticFiles.add("public");
             config.fileRenderer(new JavalinFreemarker());
         }).start(8080);
 
-
-
-        // PRINCIPAL
+        //PRINCIPAL
         app.get("/", Main::ejemplo);
-
-
+        app.get("/login", FS5controller::servirLogin);
+        app.get("/competicionesIndex",FS5controller::servirCompeticiones);
+        app.get("/equiposIndex",FS5controller::servirEquipos);
 
     }
 
     private static void ejemplo(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("/templates/index.ftl");
 
-        Map<String,Object> model = new HashMap<>();
-        context.render("/templates/index.ftl",model);
+
     }
 
 }

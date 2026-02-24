@@ -1,0 +1,26 @@
+ /*FOOTER(COMÚN A TODOS)*/
+    .pie{
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: solid rgba(23,23,77);
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+        font-size: 1.75vh;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .contacto{
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+    }
+    .rrss img{
+        width: 3vw;
+    }
+    /*-------------------------------*/

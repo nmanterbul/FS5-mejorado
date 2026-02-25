@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                     <span>COMPETICIONES</span>
                 </div>
             </a>
-            <a href="equiposindex">
+            <a href="equiposIndex">
                 <div class="boton">
                     <span>EQUIPOS</span>
                 </div>
@@ -37,6 +39,7 @@
         </div>
     </div>
 
-    <#include footer.ftl>
+    <#include "footer.ftl">
+
 </body>
 </html>

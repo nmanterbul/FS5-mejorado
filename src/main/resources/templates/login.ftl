@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet"  type="text/css" href="/css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
-    <div>
+
+    <#include "cabecera.ftl">
+
+    <div class="login">
         <form>
             <div class="Titulo">
                  <p>Sign In</p>
@@ -34,5 +39,8 @@
 
         </form>
     </div>
+
+    <#include "footer.ftl">
+
 </body>
 </html>

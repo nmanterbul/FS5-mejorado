@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -17,23 +17,24 @@
         <div class="logo"><img src="imgs/LOGOFS5.jpg" alt=""></div>
     </div>
 
+
     <!--CONTENIDO-->
     <div class="contenido">
         <div class="imgIndex"><img src="imgs/LOGOFS5.jpg" alt=""></div>
         <div class="botonesMain">
             <div class="boton">
-                <span>EQUIPOS</span>
+                <span>COMPETICIONES</span>
             </div>
             <div class="botonPeque">
-                <a href="tablaEquipos.html"><span>1º DIVISIÓN</span></a>
+                <a href=""><span>1º DIVISIÓN</span></a>
             </div>
             <div class="botonPeque">
-                <a href="tablaEquipos.html"><span>2º DIVISIÓN</span></a>
+                <a href= ""><span>2º DIVISIÓN</span></a>
             </div>
         </div>
     </div>
 
-    <!--PIE-->
+     <!--PIE-->
     <div class="pie">
         <div class="copy">
             <span>COPYRIGHT</span>
@@ -49,8 +50,6 @@
             <div  class="content"><img src="imgs/insta.jpg" alt=""><img src="imgs/X.png" alt=""><img src="imgs/Youtube.png" alt=""></div>
         </div>
     </div>
-
-
 
 </body>
 </html>

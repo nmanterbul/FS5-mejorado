@@ -1,10 +1,10 @@
 
-CREATE USER 'proy'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
 
-CREATE DATABASE crud_db;
+CREATE DATABASE FS5_DB;
 
-GRANT ALL PRIVILEGES ON crud_db.* TO 'proy'@'localhost';
+GRANT ALL PRIVILEGES ON FS5_DB.* TO 'root'@'localhost';
 
-USE crud_db;
+USE FS5_DB;
 
 

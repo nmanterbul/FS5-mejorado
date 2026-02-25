@@ -1,8 +1,8 @@
-CREATE TABLE crud_db.notas (
-                             id  bigint(20) NOT NULL AUTO_INCREMENT,
-                             titulo varchar(255) DEFAULT '',
-                             contenido varchar(4095) DEFAULT '',
-                             creado varchar(4095) DEFAULT '',
-                             modificado varchar(4095) DEFAULT '',
+CREATE TABLE usuarios (
+                             id  bigint(20)  AUTO_INCREMENT,
+                             nombre varchar(20) DEFAULT '' unique ,
+                             edad integer ,
+                             password varchar(100) DEFAULT '',
+                             rol integer ,
                              PRIMARY KEY (id)
 );

@@ -8,10 +8,24 @@ import java.util.Map;
 
 public class FS5controller {
 
+    public static void index(@NotNull Context context) {
+        Map<String,Object> model = new HashMap<>();
+        context.render("/templates/index.ftl",model);
+
+    }
+
 
     public static void login(@NotNull Context context) {
         Map<String,Object> model = new HashMap<>();
         context.render("/templates/login.ftl",model);
 
     }
+
+    public static void gestion(@NotNull Context context) {
+
+        Map<String,Object> model = new HashMap<>();
+        context.render("/templates/gestion.ftl",model);
+    }
+
+
 }

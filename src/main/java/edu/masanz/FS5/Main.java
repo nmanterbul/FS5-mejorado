@@ -21,6 +21,7 @@ public class Main {
     public static void main(String[] args) {
 
         logger.info("ARRANCANDO APLICACION");
+        ConnectionManager.conectar("FS5_DB", "root", "root");
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("public_css");
@@ -30,8 +31,10 @@ public class Main {
 
 
         // PRINCIPAL
-        app.get("/", Main::ejemplo);
-        app.get("/Login", FS5controller::login);
+        app.get("/", FS5controller::index);
+        app.get("/login", FS5controller::login);
+        app.get("/gestion", FS5controller::gestion);
+
 
 
 

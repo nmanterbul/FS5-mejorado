@@ -2,20 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <title>CompeticionesIndex</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/></head>
 
 <body>
 
-    <!--CABECERA-->
-    <div class="cabecera">
-        <div class="backButton"><a href="index.html"><img src="imgs/backButton.png" alt=""></a></div>
-        <h1>FS5</h1>
-        <div class="logo"><img src="imgs/LOGOFS5.jpg" alt=""></div>
-    </div>
-
+    <#include "cabecera.ftl">
 
     <!--CONTENIDO-->
     <div class="contenido">
@@ -33,22 +27,7 @@
         </div>
     </div>
 
-     <!--PIE-->
-    <div class="pie">
-        <div class="copy">
-            <span>COPYRIGHT</span>
-            <div  class="content"><span>© 2026 FS5. Todos los derechos reservados.</span></div>
-        </div>
-        <div class="contacto">
-            <span>CONTACTO</span>
-            <div class="content"><span>📧 contacto@FS5.com</span></div>
-            <div class="content"><span>📞 +34 900 123 456</span></div>
-        </div>
-        <div class="rrss">
-            <span>REDES SOCIALES</span>
-            <div  class="content"><img src="imgs/insta.jpg" alt=""><img src="imgs/X.png" alt=""><img src="imgs/Youtube.png" alt=""></div>
-        </div>
-    </div>
+    <#include "footer.ftl">
 
 </body>
 </html>

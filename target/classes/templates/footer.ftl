@@ -1,13 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
-</head>
-
-<body>
     <div class="pie">
         <div class="copy">
             <span>COPYRIGHT</span>
@@ -23,5 +14,3 @@
             <div  class="content"><img src="imgs/insta.jpg" alt=""><img src="imgs/X.png" alt=""><img src="imgs/Youtube.png" alt=""></div>
         </div>
     </div>
-</body>
-</html>

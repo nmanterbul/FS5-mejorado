@@ -16,11 +16,25 @@ public class FS5controller {
 
     public static void servirLogin(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/");
         context.render("/templates/login.ftl", model);
     }
 
     public static void servirCompeticionesIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/");
         context.render("/templates/competicionesIndex.ftl", model);
+    }
+
+    public static void servirEquiposIndex(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/");
+        context.render("/templates/equiposIndex.ftl", model);
+    }
+
+    public static void servirTablaEquipos(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/equiposIndex");
+        context.render("/templates/tablaEquipos.ftl", model);
     }
 }

@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet"  type="text/css" href="/css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
-    <div>
-        <form>
+
+    <#include "cabecera.ftl">
+
+    <div class="contenedor">
+
+        <form class="login" action="/gestion" type ="post">
             <div class="Titulo">
                  <p>Sign In</p>
             </div>
 
-            <br>
             <div class="Formulario">
-                <div class="Usuario">
+                <div class="campo">
                     <label name="Usuario">Usuario: </label>
                     <input type="text" >
-                    <img src="img/Foto Usuario.png" width="100px">
+                    <span>👤</span>
                     <br>
                 </div>
-                <div class="Contraseña">
+
+                <div class="campo">
                     <label>Contraseña: </label>
                     <input type="password">
-                    <img src="img/Foto Contraseña.png" width="50px">
+                    <span>🔒</span>
                 </div>
                 <br>
 
@@ -31,8 +37,11 @@
              <div class="Login">
                 <input name="Login" type="submit" value="Login">
             </div>
-
         </form>
     </div>
+    <br>
+
+    <#include "footer.ftl">
+
 </body>
 </html>

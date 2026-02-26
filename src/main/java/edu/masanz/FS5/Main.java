@@ -1,6 +1,7 @@
 package edu.masanz.FS5;
 
 import edu.masanz.FS5.controller.FS5controller;
+import edu.masanz.FS5.database.ConnectionManager;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -19,6 +20,7 @@ public class Main {
     public static void main(String[] args) {
 
         logger.info("ARRANCANDO APLICACION");
+        ConnectionManager.conectar("FS5_db","root","roo7");
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("public");
@@ -27,10 +29,17 @@ public class Main {
 
         // PRINCIPAL
         app.get("/", FS5controller::servirIndex);
-
+        // INDEX
         app.get("/login", FS5controller::servirLogin);
         app.get("/competicionesIndex", FS5controller::servirCompeticionesIndex);
-
+        app.get("/equiposIndex", FS5controller::servirEquiposIndex);
+        app.get("/tablaEquipos", FS5controller::servirTablaEquipos);
+        // ZONA ADMINISTRADOR
+        app.get("/gestion", FS5controller::servirGestion);
+        app.get("/gestionTorneos", FS5controller::servirGestionTorneos);
+        app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
+        app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
+        app.get("/crearTorneo", FS5controller::servirCrearTorneo);
 
     }
 

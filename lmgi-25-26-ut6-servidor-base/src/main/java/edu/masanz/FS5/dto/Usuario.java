@@ -13,13 +13,13 @@ public class Usuario {
 
     }
 
-    public Usuario(int rol, String nombre, String contrasena) {
-        this.rol = rol;
+    public Usuario(String nombre, String contrasena) {
         this.nombre = nombre;
         this.contrasena = contrasena;
     }
 
     public int getRol() {
+
         return rol;
     }
 

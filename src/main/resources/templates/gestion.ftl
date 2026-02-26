@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión</title>
-    <link rel="stylesheet" href="public_css/gestión.css">
+    <link rel="stylesheet" href="/gestion.css">
 </head>
 <body>
     <!--CABECERA-->
@@ -18,7 +18,7 @@
 
 
         <div class="cuadrado">
-            <a href="OpcionesDeGestión.html">TORNEOS</a>
+            <a href="/opcionesgestion">TORNEOS</a>
         </div>
         <div class="cuadrado">
             <a href="OpcionesDeEquipo.html">EQUIPOS</a>

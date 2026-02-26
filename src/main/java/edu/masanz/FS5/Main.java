@@ -34,6 +34,8 @@ public class Main {
         app.get("/", FS5controller::index);
         app.get("/login", FS5controller::login);
         app.get("/gestion", FS5controller::gestion);
+        app.get("/opcionesgestion", FS5controller::opcionesGestion);
+        app.get("/opcionesequipo", FS5controller::opcionesEquipo);
 
 
 
@@ -43,10 +45,5 @@ public class Main {
 
 
 
-    private static void ejemplo(@NotNull Context context) {
-
-        Map<String,Object> model = new HashMap<>();
-        context.render("/templates/index.ftl",model);
-    }
 
 }

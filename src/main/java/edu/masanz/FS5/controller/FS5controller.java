@@ -28,4 +28,33 @@ public class FS5controller {
     }
 
 
+    public static void opcionesGestion(@NotNull Context context) {
+        Map<String,Object> model = new HashMap<>();
+        context.render("/templates/opcionesDeGestion.ftl",model);
+
+
+    }
+
+    public static void opcionesEquipo(@NotNull Context context) {
+
+        Map<String,Object> model = new HashMap<>();
+        context.render("/templates/opcionesDeGestion.ftl",model);
+
+    }
+
+
+    public static void servirLogin(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/login.ftl", model);
+    }
+
+    public static void servirCompeticiones(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/competiciones.ftl", model);
+    }
+
+    public static void servirEquipos(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        context.render("templates/equipos.ftl", model);
+    }
 }

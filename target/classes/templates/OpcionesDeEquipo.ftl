@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión</title>
-    <link rel="stylesheet" href="/gestion.css">
+    <link rel="stylesheet" href="/OpcionesDeEquipo.css">
 </head>
 <body>
-    <!--CABECERA-->
+     <!--CABECERA-->
     <div class="cabecera">
-        <div class="backButton"><a href="Login.html"><img src="/img/backButton.png" alt=""></a></div>
+        <div class="backButton"><a href="GestiónTorneos.html"><img src="/img/backButton.png" alt=""></a></div>
         <div><h1>FS5</h1></div>
         <div class="logo"><img src="/img/LOGOFS5.jpg" alt=""></div>
     </div>
 
     <div class="contenedor">
 
-
         <div class="cuadrado">
-            <a href="/opcionesgestion">TORNEOS</a>
+            <a href="CrearEquipo.html">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="OpcionesDeEquipo.html">EQUIPOS</a>
+            <a href="EditarEquipo.html">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="OpcionesDeJugadores.html">JUGADORES</a>
+            <a href="BorrarEquipo.html">BORRAR</a>
         </div>
 
     </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="/public_css/index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
@@ -20,17 +20,17 @@
     <div class="contenido">
         <div class="imgIndex"><img src="img/LOGOFS5.jpg" alt=""></div>
         <div class="botonesMain">
-            <a href="competicionesIndex.html">
+            <a href="/competicionesIndex.html">
                 <div class="boton">
                     <span>COMPETICIONES</span>
                 </div>
             </a>
-            <a href="equiposindex.html">
+            <a href="/templates/equiposindex.html">
                 <div class="boton">
                     <span>EQUIPOS</span>
                 </div>
             </a>
-            <a href="Login.html">
+            <a href="/login">
                 <div class="boton">
                     <span>GESTIÓN</span>
                 </div>

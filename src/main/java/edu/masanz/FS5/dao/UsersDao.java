@@ -6,7 +6,7 @@ import edu.masanz.FS5.model.User;
 public class UsersDao {
 
     public static User login(String username, String password){
-        String select = "Select * from useres where username = ? and password = ? ";
+        String select = "Select * from users where username = ? and password = ? ";
         Object[] params = {};
         Object[][] result = ConnectionManager.ejecutarSelectSQL(select, params);
         if (result.length == 1){

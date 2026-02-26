@@ -11,24 +11,25 @@
 
     <#include "cabecera.ftl">
 
-    <div class="login">
-        <form>
+    <div class="contenedor">
+
+        <form class="login" action="/gestion" type ="post">
             <div class="Titulo">
                  <p>Sign In</p>
             </div>
 
-            <br>
             <div class="Formulario">
-                <div class="Usuario">
+                <div class="campo">
                     <label name="Usuario">Usuario: </label>
                     <input type="text" >
-                    <img src="img/Foto Usuario.png" width="100px">
+                    <span>👤</span>
                     <br>
                 </div>
-                <div class="Contraseña">
+
+                <div class="campo">
                     <label>Contraseña: </label>
                     <input type="password">
-                    <img src="img/Foto Contraseña.png" width="50px">
+                    <span>🔒</span>
                 </div>
                 <br>
 
@@ -36,9 +37,9 @@
              <div class="Login">
                 <input name="Login" type="submit" value="Login">
             </div>
-
         </form>
     </div>
+    <br>
 
     <#include "footer.ftl">
 

@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) {
 
         logger.info("ARRANCANDO APLICACION");
-        ConnectionManager.conectar("FS5_DB","root","roo7");
+        ConnectionManager.conectar("FS5_DB","proy","password");
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("public");
@@ -36,6 +36,8 @@ public class Main {
         app.get("/equiposIndex",FS5controller::servirEquiposIndex);
         //ZONA DE ADMINISTRADOR
         app.post("/gestion", UsersController::login);
+
+
 
 
 

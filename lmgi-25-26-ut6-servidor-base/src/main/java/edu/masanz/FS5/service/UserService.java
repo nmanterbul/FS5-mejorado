@@ -5,11 +5,9 @@ import edu.masanz.FS5.model.User;
 
 public class UserService {
 
-    private static final UsersDao user = new UsersDao();
-
     public static User login(String username, String password) {
 
-        return user.login(username,password);
+        return UsersDao.login(username,password);
     }
 
 

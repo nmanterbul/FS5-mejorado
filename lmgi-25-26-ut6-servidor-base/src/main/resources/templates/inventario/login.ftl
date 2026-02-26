@@ -11,7 +11,7 @@
 <body>
 
 <div>
-    <form>
+    <form class ="login" action="/gestion" method="POST">
         <div class="Titulo">
              <p>Sign In</p>
         </div>
@@ -19,24 +19,21 @@
         <br>
         <div class="Formulario">
             <div class="Usuario">
-                <label name="Usuario">Usuario: </label>
-                <input type="text" >
+                <label name="username">Usuario: </label>
+                <input type="text" name="username">
                 <img src="img/Foto Usuario.png" width="100px">
                 <br>
             </div>
 
             <div class="Contraseña">
-                <label>Contraseña: </label>
-                <input type="password">
+                <label name="pass">Contraseña: </label>
+                <input type="password" name="pass">
                 <img src="img/Foto Contraseña.png" width="50px">
             </div>
             <br>
-
-
         </div>
          <div class="Login">
-            <input name="Login" type="submit" value="Login">
-            <a href="gestion"/>
+            <input type="submit" value="Login">
         </div>
     </form>
 </div>

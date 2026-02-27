@@ -1,6 +1,5 @@
 package edu.masanz.FS5.controller;
 
-import edu.masanz.FS5.dto.Usuario;
 import edu.masanz.FS5.service.FS5Service;
 import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
@@ -14,35 +13,53 @@ public class FS5controller {
 
     public static void servirLogin(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/inventario/login.ftl", model);
+        context.render("templates/login.ftl", model);
     }
 
     public static void servirCompeticionesIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/inventario/competiciones.ftl", model);
+        context.render("templates/competiciones/competiciones.ftl", model);
     }
 
     public static void servirEquiposIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        context.render("templates/inventario/equipos.ftl", model);
+        context.render("templates/equipos/equipo.ftl", model);
     }
 
 
-    public static void servirGestionIndex(@NotNull Context context) {
+    public static void servirTablaEquipos(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        model.put("nombre","password");
-        String nombre = context.formParam("nombre");
-        String password = context.formParam("password");
-        Usuario usuario = FS5Service.buscarNombre(nombre);
-        Usuario contra = FS5Service.buscarPassword(password);
-        int rol = FS5Service.buscarRol(nombre,password);
-        if (usuario != null && contra != null && rol == 1){
-            context.render("templates/inventario/gestion.ftl");
-        }else if (usuario != null && contra != null){
-            context.redirect("templates/index.ftl");
-        }else{
-            context.redirect("templates/inventario/login.ftl");
-        }
+        model.put("backURL", "/equiposIndex");
+        context.render("/templates/error.ftl");
+    }
 
+    public static void servirGestion(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/login");
+        context.render("/templates/gestion.ftl", model);
+    }
+
+    public static void servirGestionTorneos(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/gestion");
+        context.render("/templates/gestionTorneos.ftl", model);
+    }
+
+    public static void servirGestionEquipos(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/gestion");
+        context.render("/templates/gestionEquipos.ftl", model);
+    }
+
+    public static void servirGestionJugadores(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/gestion");
+        context.render("/templates/gestionJugadores.ftl", model);
+    }
+
+    public static void servirCrearTorneo(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/gestionTorneos");
+        context.render("/templates/crearTorneo.ftl", model);
     }
 }

@@ -19,9 +19,13 @@ public class UsersController {
 
         User user = UserService.login(username,password);
         if (user != null){
-            context.render("templates/inventario/gestion.ftl", model);
+            if (user.getRol() == 1){
+                context.render("templates/gestion/gestion.ftl", model);
+            }else{
+                context.render("/templates/index.ftl", model);
+            }
         }else{
-            context.render("templates/inventario/error.ftl", model);
+            context.render("templates/error.ftl", model);
         }
 
     }

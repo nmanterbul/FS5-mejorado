@@ -1,34 +1,27 @@
 package edu.masanz.FS5.controller;
 
-import edu.masanz.FS5.Service.UserService;
-import edu.masanz.FS5.model.Usuarios;
-import org.jetbrains.annotations.NotNull;
+import edu.masanz.FS5.model.User;
+import edu.masanz.FS5.service.UserService;
+import io.javalin.http.Context;
 
-import javax.naming.Context;
 import java.util.HashMap;
 import java.util.Map;
 
 public class UsersController {
 
-
-    private static final UserService UserService = new UserService();
-
-
-
-
-    public static void login(@NotNull io.javalin.http.Context context) {
-
+    public static void login(Context context){
         Map<String, Object> model = new HashMap<>();
         model.put("username", "username");
-        model.put("password", "password");
+        model.put("pass", "pass");
+
         String username = context.formParam("username");
-        String password = context.formParam("password");
+        String password = context.formParam("pass");
 
-        Usuarios user = UserService.login(username,password);
+        User user = UserService.login(username,password);
 
-        if (user != null){
-            context.render("templates/gestion.ftl", model);
-        }else{
+        if (user!=null){
+            context.render("templates/gestion/gestion.ftl", model);
+        }else {
             context.render("templates/login.ftl", model);
         }
 

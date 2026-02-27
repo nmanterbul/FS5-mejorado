@@ -2,8 +2,6 @@ package edu.masanz.FS5.dto;
 
 public class Usuario {
 
-
-
     private int rol;
 
     private String nombre;
@@ -44,4 +42,6 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
+
+
 }

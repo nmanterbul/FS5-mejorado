@@ -1,8 +1,7 @@
 CREATE TABLE usuarios (
-                             id  bigint(20)  AUTO_INCREMENT,
-                             nombre varchar(20) DEFAULT '' unique ,
-                             edad integer ,
-                             password varchar(100) DEFAULT '',
-                             rol integer ,
-                             PRIMARY KEY (id)
+
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    pass VARCHAR(255) NOT NULL UNIQUE,
+	rol int
 );

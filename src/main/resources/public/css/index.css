@@ -1,122 +1,123 @@
+
     *{
-        box-sizing: border-box;
-    }
+            box-sizing: border-box;
+        }
 
-    body{
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-    }
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
 
-    /*CABECERA (COMÚN A TODOS)*/
-    .cabecera{
-        display: flex;
-        height: 11vh;
-        border-bottom: solid rgba(23,23,77);
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-    }
-    .cabecera h1{
-        color: rgba(23, 23, 77);
-        border-radius: 15px;
-        border: solid rgba(23, 23, 77);
-        text-align: center;
-        align-content: center;
-        font-size: 50px;
-    }
-    .logo img{
-        width: 75px;
-        height: 75px;
-        border-radius: 100%;
-        right: 15px;
-    }
-    .backButton img{
-        width: 75px;
-        height: 75px;
-        border-radius: 100%;
-        left: 15px;
-    }
-    /*-------------------------------*/
+        /*CABECERA (COMÚN A TODOS)*/
+        .cabecera{
+            display: flex;
+            height: 11vh;
+            border-bottom: solid rgba(23,23,77);
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+        .cabecera h1{
+            color: rgba(23, 23, 77);
+            border-radius: 15px;
+            border: solid rgba(23, 23, 77);
+            text-align: center;
+            align-content: center;
+            font-size: 50px;
+        }
+        .logo img{
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            right: 15px;
+        }
+        .backButton img{
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            left: 15px;
+        }
+        /*-------------------------------*/
 
-    /*CONTENIDO*/
+        /*CONTENIDO*/
 
-    .contenido{
-        height: 78vh;
-        overflow: scroll;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .contenido .imgIndex img{
-        width: 50%;
-        border-radius: 100%;
-        justify-content: center;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-    .contenido .boton span{
-        font-size: 11vw;
-    }
-    .contenido .botonPeque span{
-        font-size: 11vw;
-    }
-    .botonesMain{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-    }
-    .contenido .botonesMain a{
-        width: 100%;
-    }
-    .contenido .botonesMain .boton{
-        background-color: rgba(23, 23, 77);
-        color: white;
-        border-radius: 15px;
-        border: solid rgba(23, 23, 77);
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    .botonPeque{
-        background-color: rgba(23, 23, 77);
-        color: white;
-        border-radius: 15px;
-        border: solid rgba(23, 23, 77);
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 15px;
-        width: 75%;
-    }
-    /*-------------------------------*/
+        .contenido{
+            height: 78vh;
+            overflow: scroll;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .contenido .imgIndex img{
+            width: 50%;
+            border-radius: 100%;
+            justify-content: center;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .contenido .boton span{
+            font-size: 11vw;
+        }
+        .contenido .botonPeque span{
+            font-size: 11vw;
+        }
+        .botonesMain{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        .contenido .botonesMain a{
+            width: 100%;
+        }
+        .contenido .botonesMain .boton{
+            background-color: rgba(23, 23, 77);
+            color: white;
+            border-radius: 15px;
+            border: solid rgba(23, 23, 77);
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .botonPeque{
+            background-color: rgba(23, 23, 77);
+            color: white;
+            border-radius: 15px;
+            border: solid rgba(23, 23, 77);
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            width: 75%;
+        }
+        /*-------------------------------*/
 
-    /*FOOTER(COMÚN A TODOS)*/
-    .pie{
-        height: 11vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        border-top: solid rgba(23,23,77);
-        border-left: solid rgba(23,23,77);
-        border-right: solid rgba(23,23,77);
-        font-size: 1.75vh;
-    }
-    .content{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-    }
-    .contacto{
-        border-left: solid rgba(23,23,77);
-        border-right: solid rgba(23,23,77);
-    }
-    .rrss img{
-        width: 3vw;
-    }
-    /*-------------------------------*/
+        /*FOOTER(COMÚN A TODOS)*/
+        .pie{
+            height: 11vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            border-top: solid rgba(23,23,77);
+            border-left: solid rgba(23,23,77);
+            border-right: solid rgba(23,23,77);
+            font-size: 1.75vh;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .contacto{
+            border-left: solid rgba(23,23,77);
+            border-right: solid rgba(23,23,77);
+        }
+        .rrss img{
+            width: 3vw;
+        }
+        /*-------------------------

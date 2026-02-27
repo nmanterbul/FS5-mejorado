@@ -1,7 +1,7 @@
 package edu.masanz.FS5;
 
-
 import edu.masanz.FS5.controller.FS5controller;
+import edu.masanz.FS5.controller.UsersController;
 import edu.masanz.FS5.database.ConnectionManager;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
@@ -21,28 +21,34 @@ public class Main {
     public static void main(String[] args) {
 
         logger.info("ARRANCANDO APLICACION");
-        ConnectionManager.conectar("FS5_DB", "root", "root");
+        ConnectionManager.conectar("FS5_DB","proy","password");
 
         Javalin app = Javalin.create(config -> {
-            config.staticFiles.add("public_css");
+            config.staticFiles.add("public");
             config.fileRenderer(new JavalinFreemarker());
         }).start(8080);
 
-
-
         // PRINCIPAL
-        app.get("/", FS5controller::index);
-        app.get("/login", FS5controller::login);
-        app.get("/gestion", FS5controller::gestion);
-        app.get("/opcionesgestion", FS5controller::opcionesGestion);
-        app.get("/opcionesequipo", FS5controller::opcionesEquipo);
+        app.get("/", FS5controller::servirIndex);
+        // INDEX
+        app.get("/login", FS5controller::servirLogin);
+        app.get("/competiciones", FS5controller::servirCompeticiones);
+        app.get("/competicionesIndex", FS5controller::servirCompeticionesIndex);
+        app.get("/equipos", FS5controller::servirEquipos);
+        app.get("/equiposIndex", FS5controller::servirEquiposIndex);
+        app.get("/tablaEquipos", FS5controller::servirTablaEquipos);
+        // ZONA ADMINISTRADOR
+        app.post("/gestion", UsersController::login);
+        app.get("/gestionTorneos", FS5controller::servirGestionTorneos);
+        app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
+        app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
+        app.get("/crearTorneo", FS5controller::servirCrearTorneo);
 
 
 
 
 
     }
-
 
 
 

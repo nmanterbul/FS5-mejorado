@@ -1,7 +1,9 @@
 package edu.masanz.FS5;
 
 import edu.masanz.FS5.controller.FS5controller;
+import edu.masanz.FS5.controller.UsersController;
 import edu.masanz.FS5.database.ConnectionManager;
+import edu.masanz.FS5.model.User;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 import io.javalin.rendering.template.JavalinFreemarker;
@@ -20,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
 
         logger.info("ARRANCANDO APLICACION");
-        ConnectionManager.conectar("FS5_db","root","roo7");
+        ConnectionManager.conectar("FS5_DB","proy","password");
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("public");
@@ -33,14 +35,25 @@ public class Main {
         app.get("/login", FS5controller::servirLogin);
         app.get("/competicionesIndex", FS5controller::servirCompeticionesIndex);
         app.get("/equiposIndex", FS5controller::servirEquiposIndex);
-        app.get("/tablaEquipos", FS5controller::servirTablaEquipos);
+        app.get("/tablaEquipos/{id}", FS5controller::servirTablaEquipos);
         // ZONA ADMINISTRADOR
+        app.post("/gestion", FS5controller::login);
         app.get("/gestion", FS5controller::servirGestion);
         app.get("/gestionTorneos", FS5controller::servirGestionTorneos);
         app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
         app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
+        // TORNEOS
         app.get("/crearTorneo", FS5controller::servirCrearTorneo);
-
+        app.get("/editarTorneo", FS5controller::servirEditarTorneo);
+        app.get("/borrarTorneo", FS5controller::servirBorrarTorneo);
+        // EQUIPOS
+        app.get("/crearEquipo", FS5controller::servirCrearEquipo);
+        app.get("/editarEquipo", FS5controller::servirEditarEquipo);
+        app.get("/borrarEquipo", FS5controller::servirBorrarEquipo);
+        // JUGADORES
+        app.get("/crearJugador", FS5controller::servirCrearJugador);
+        app.get("/editarJugador", FS5controller::servirEditarJugador);
+        app.get("/borrarJugador", FS5controller::servirBorrarJugador);
     }
 
 

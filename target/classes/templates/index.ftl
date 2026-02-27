@@ -21,17 +21,17 @@
     <div class="contenido">
         <div class="imgIndex"><img src="imgs/LOGOFS5.jpg" alt=""></div>
         <div class="botonesMain">
-            <a href="competicionesIndex">
+            <a href="/competicionesIndex">
                 <div class="boton">
                     <span>COMPETICIONES</span>
                 </div>
             </a>
-            <a href="equiposIndex">
+            <a href="/equiposIndex">
                 <div class="boton">
                     <span>EQUIPOS</span>
                 </div>
             </a>
-            <a href="login">
+            <a href="/login">
                 <div class="boton">
                     <span>GESTIÓN</span>
                 </div>

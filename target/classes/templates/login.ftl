@@ -9,26 +9,26 @@
 </head>
 <body>
 
-    <#include "cabecera.ftl">
+    <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
 
-        <form class="login" action="/gestion" type ="post">
+        <form class="login" action="/gestion" method ="post">
             <div class="Titulo">
                  <p>Sign In</p>
             </div>
 
             <div class="Formulario">
                 <div class="campo">
-                    <label name="Usuario">Usuario: </label>
-                    <input type="text" >
+                    <label name="username">Usuario: </label>
+                    <input type="text" name = "username">
                     <span>👤</span>
                     <br>
                 </div>
 
                 <div class="campo">
-                    <label>Contraseña: </label>
-                    <input type="password">
+                    <label name = "pass">Contraseña: </label>
+                    <input type="password" name = "pass">
                     <span>🔒</span>
                 </div>
                 <br>
@@ -41,7 +41,7 @@
     </div>
     <br>
 
-    <#include "footer.ftl">
+    <#include "/templates/footer.ftl">
 
 </body>
 </html>

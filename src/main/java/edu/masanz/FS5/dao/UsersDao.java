@@ -6,10 +6,11 @@ import edu.masanz.FS5.model.User;
 public class UsersDao {
 
     public static User login(String username, String password){
-        String select = "Select * from users where username = ? and password = ? ";
-        Object[] params = {};
+        String select = "Select * from usuarios where username like ? and pass like ? ";
+        Object[] params = {username, password};
         Object[][] result = ConnectionManager.ejecutarSelectSQL(select, params);
-        if (result.length == 1){
+
+        if (result.length > 0){
             User user = new User();
             int id = (int) result[0][0];
             String resultUsername = (String) result[0][1];
@@ -19,12 +20,13 @@ public class UsersDao {
             user.setUsername(resultUsername);
             user.setPassword(resultPassword);
             user.setRol(rol);
+            return user;
         }
         return null;
     }
 
     public static void main(String[] args) {
-        ConnectionManager.conectar("FS5_db","root","roo7");
+        ConnectionManager.conectar("FS5_DB","proy","password");
         User user = login("adri", "adri");
         System.out.println(user);
 

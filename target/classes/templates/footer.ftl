@@ -11,6 +11,6 @@
         </div>
         <div class="rrss">
             <span>REDES SOCIALES</span>
-            <div  class="content"><img src="imgs/insta.jpg" alt=""><img src="imgs/X.png" alt=""><img src="imgs/Youtube.png" alt=""></div>
+            <div  class="content"><img src="/imgs/insta.jpg" alt=""><img src="/imgs/X.png" alt=""><img src="/imgs/Youtube.png" alt=""></div>
         </div>
     </div>

@@ -12,17 +12,17 @@ public class UsersController {
     public static void login(Context context){
         Map<String, Object> model = new HashMap<>();
         model.put("username", "username");
-        model.put("password", "password");
+        model.put("pass", "pass");
 
         String username = context.formParam("username");
-        String password = context.formParam("password");
+        String password = context.formParam("pass");
 
         User user = UsersService.login(username,password);
 
         if (user!=null){
-            context.render("templates/gestion.ftl", model);
+            context.render("templates/gestion/gestion.ftl", model);
         }else {
-            context.render("templates/login.ftl", model);
+            context.render("templates/error.ftl", model);
         }
 
     }

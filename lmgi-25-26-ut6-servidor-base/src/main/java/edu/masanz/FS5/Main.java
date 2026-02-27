@@ -34,8 +34,14 @@ public class Main {
         app.get("/login", FS5controller::servirLogin);
         app.get("/competicionesIndex",FS5controller::servirCompeticionesIndex);
         app.get("/equiposIndex",FS5controller::servirEquiposIndex);
+        app.get("/tablaEquipos/{id}", FS5controller::servirTablaEquipos);
+
         //ZONA DE ADMINISTRADOR
         app.post("/gestion", UsersController::login);
+        app.get("/gestionTorneos", FS5controller::servirGestionTorneos);
+        app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
+        app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
+        app.get("/crearTorneo", FS5controller::servirCrearTorneo);
 
 
 

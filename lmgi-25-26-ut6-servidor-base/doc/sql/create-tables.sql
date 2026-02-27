@@ -5,3 +5,8 @@ CREATE TABLE usuarios (
     pass VARCHAR(255) NOT NULL UNIQUE,
 	rol int
 );
+
+create table divisiones(
+	id int primary key,
+    divisionName varchar(30) not null
+);

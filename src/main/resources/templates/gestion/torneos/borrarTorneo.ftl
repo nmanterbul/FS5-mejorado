@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,34 +17,29 @@
         <div class="formulario">
             <form>
                 <div class="Titulo">
-                   <span>EQUIPOS</span>
+                    <label for="TORNEO">TORNEOS</label>
                 </div>
-
-
-
 
                 <br>
                 <div class="opciones">
-                     <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Logo Barsa.png" width="40px"> FC Barcelona </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Logo Ribera.png" width="40px"> Ribera Navarra </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Logo Real Madrid.png" width="40px"> Real Madrid </label>
+                    <label for="torneo">LIGA </label>
+                     <input type="radio" name="torneo">
+                    <label for="torneo"> PLAY OFF TÍTULO</label>
+                    <input type="radio" name="torneo">
+                    <label for="torneo"> PLAY OFF ASCENSO </label>
+                    <input type="radio" name="torneo">
+
 
                 </div>
 
                 <div class="eliminar">
-                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
+                    <a href="OpcionesDeGestión.html">ELIMINAR </a>
+                    <span></span>
                 </div>
-
-
-
             </form>
         </div>
     </div>
+
 
     <#include "/templates/footer.ftl">
 

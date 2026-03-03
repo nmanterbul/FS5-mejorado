@@ -7,10 +7,10 @@ public class User {
     private String password;
     private int rol;
 
-    public User() {
+
+    public User(){
 
     }
-
 
     public int getId() {
         return id;

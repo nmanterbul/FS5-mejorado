@@ -13,18 +13,15 @@
     <div class="contenedor">
 
         <div class="cuadrado">
-            <a href="/crearJugador">CREAR</a>
+            <a href="/crearTorneo">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/editarJugador">EDITAR</a>
+            <a href="/editarTorneo">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/borrarJugador">BORRAR</a>
+            <a href="/borrarTorneo">BORRAR</a>
         </div>
-
     </div>
-
 <#include "/templates/footer.ftl">
-
 </body>
 </html>

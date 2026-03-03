@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/login.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+    <link rel="stylesheet" href="/css/login.css">
+
+
 </head>
 <body>
+<#include "/templates/cabecera.ftl"><div>
+    <form class ="login" action="/gestion" method="POST">
+        <div class="Titulo">
+             <p>Sign In</p>
+        </div>
 
-    <#include "cabecera.ftl">
-
-    <div class="contenedor">
-
-        <form class="login" action="/gestion" type ="post">
-            <div class="Titulo">
-                 <p>Sign In</p>
-            </div>
-
-            <div class="Formulario">
-                <div class="campo">
-                    <label name="Usuario">Usuario: </label>
-                    <input type="text" >
-                    <span>👤</span>
-                    <br>
-                </div>
-
-                <div class="campo">
-                    <label>Contraseña: </label>
-                    <input type="password">
-                    <span>🔒</span>
-                </div>
+        <br>
+        <div class="Formulario">
+            <div class="Usuario">
+                <label name="username">Usuario: </label>
+                <input type="text" name="username">
+                <img src="img/Foto Usuario.png" width="100px">
                 <br>
-
             </div>
-             <div class="Login">
-                <input name="Login" type="submit" value="Login">
+
+            <div class="Contraseña">
+                <label name="pass">Contraseña: </label>
+                <input type="password" name="pass">
+                <img src="img/Foto Contraseña.png" width="50px">
             </div>
-        </form>
-    </div>
-    <br>
-
-    <#include "footer.ftl">
-
+            <br>
+        </div>
+         <div class="Login">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+</div>
+<br>
+<#include "/templates/footer.ftl">
 </body>
 </html>

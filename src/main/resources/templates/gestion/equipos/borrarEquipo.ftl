@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearTorneo.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
 
-        <#include "/templates/cabecera.ftl">
+    <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
 
         <div class="formulario">
             <form>
                 <div class="Titulo">
-                    <label for="TORNEO">NOMBRE DEL TORNEO</label>
-                </div>
-                <div>
-                    <br>
-                    <input type="text" name="TORNEO">
+                   <span>EQUIPOS</span>
                 </div>
 
-                <br>
-                <div class="botonGestion">
-                    <a href="EquiposIndex.html">+ AÑADIR EQUIPO</a>
-                    <br>
-                </div>
+
+
 
                 <br>
                 <div class="opciones">
@@ -42,16 +35,15 @@
 
                 </div>
 
-                <div class="guardar">
-                    <a href="OpcionesDeGestión.html">GUARDAR CAMBIOS</a>
+                <div class="eliminar">
+                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
                 </div>
+
 
 
             </form>
         </div>
     </div>
-
-
 
     <#include "/templates/footer.ftl">
 

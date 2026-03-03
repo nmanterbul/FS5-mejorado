@@ -20,10 +20,10 @@
                 <span>EQUIPOS</span>
             </div>
             <div class="botonPeque">
-                <a href="tablaEquipos.ftl"><span>1º DIVISIÓN</span></a>
+                <a href="/tablaEquipos.ftl"><span>1º DIVISIÓN</span></a>
             </div>
             <div class="botonPeque">
-                <a href="tablaEquipos.ftl"><span>2º DIVISIÓN</span></a>
+                <a href="/tablaEquipos.ftl"><span>2º DIVISIÓN</span></a>
             </div>
         </div>
     </div>

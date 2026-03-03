@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+    <#include "/templates/cabecera.ftl">
 <div>
     <form class ="login" action="/gestion" method="POST">
         <div class="Titulo">
@@ -37,5 +37,7 @@
         </div>
     </form>
 </div>
+
+    <#include "/templates/footer.ftl">
 </body>
 </html>

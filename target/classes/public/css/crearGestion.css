@@ -3,7 +3,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: sans-serif;
 }
 
@@ -22,6 +22,7 @@ body{
     width: 40vh;
     display: flex;
     justify-content: center;
+
 }
 
 .Titulo{
@@ -35,8 +36,6 @@ body{
     display: flex;
     justify-content: space-around;
 }
-
-
 .botonGestion{
     width: 25vw;
     border: 1px solid black;
@@ -71,4 +70,23 @@ body{
 .guardar:hover{
     background-color: #4e548a;
 }
-
+.Titulo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.guardar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.añadirOpcion{
+    flex-direction: column;
+    align-items: center
+}

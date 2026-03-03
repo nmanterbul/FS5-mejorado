@@ -18,10 +18,6 @@
                 <div class="Titulo">
                    <span>EQUIPOS</span>
                 </div>
-
-
-
-
                 <br>
                 <div class="opciones">
                      <input type="radio" name="Logo">
@@ -32,15 +28,10 @@
                     <br>
                     <input type="radio" name="Logo">
                     <label for="Logo"><img src="/img/Logo Real Madrid.png" width="40px"> Real Madrid </label>
-
                 </div>
-
                 <div class="eliminar">
                     <a href="OpcionesDeEquipo.html">ELIMINAR</a>
                 </div>
-
-
-
             </form>
         </div>
     </div>

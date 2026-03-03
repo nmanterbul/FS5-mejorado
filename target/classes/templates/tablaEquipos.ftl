@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="/css/tablaEquipos.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 
 <body>

@@ -13,7 +13,7 @@
 
     <div class="contenedor">
 
-        <form class="login" action="/gestion" method ="post">
+        <form class="login" action="admin/gestion" method ="post">
             <div class="Titulo">
                  <p>Sign In</p>
             </div>

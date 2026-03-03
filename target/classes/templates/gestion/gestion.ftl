@@ -13,13 +13,13 @@
 
     <div class="contenedor">
         <div class="cuadrado">
-            <a href="/gestionTorneos">TORNEOS</a>
+            <a href="/admin/gestionTorneos">TORNEOS</a>
         </div>
         <div class="cuadrado">
-            <a href="/gestionEquipos">EQUIPOS</a>
+            <a href="/admin/gestionEquipos">EQUIPOS</a>
         </div>
         <div class="cuadrado">
-            <a href="/gestionJugadores">JUGADORES</a>
+            <a href="/admin/gestionJugadores">JUGADORES</a>
         </div>
     </div>
 

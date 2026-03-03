@@ -14,22 +14,22 @@
 
     <!--CONTENIDO-->
     <div class="contenido">
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <div class="equipo"><a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
     </div>
 
     <#include "/templates/footer.ftl">

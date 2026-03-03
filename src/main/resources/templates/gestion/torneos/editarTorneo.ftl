@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,11 +17,24 @@
         <div class="formulario">
             <form>
                 <div class="Titulo">
-                   <span>EQUIPOS</span>
+                    <label for="TORNEO">NOMBRE DEL TORNEO</label>
+                </div>
+                <div>
+                    <br>
+                    <input type="text" name="TORNEO">
                 </div>
 
+                <br>
+                <div class="añadirOpcion">
+                    <div class="botonGestion">
+                         <a href="EquiposIndex.html">AÑADIR EQUIPO</a>
+                    </div>
 
+                    <div class="botonGestion">
+                        <a href="borrarTorneo.html"> ELIMINAR EQUIPO</a>
+                    </div>
 
+                </div>
 
                 <br>
                 <div class="opciones">
@@ -35,17 +49,19 @@
 
                 </div>
 
-                <div class="eliminar">
-                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
+                <div class="guardar">
+                    <a href="OpcionesDeGestión.html">GUARDAR CAMBIOS</a>
                 </div>
 
-
+               <!--<button type="submit" class="crear">
+                    GUARDAR CAMBIOS
+               </button>-->
 
             </form>
         </div>
     </div>
 
-    <#include "/templates/footer.ftl">
+     <#include "/templates/footer.ftl">
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,7 @@
 
 <body>
 
-    <#include "/templates/cabecera.ftl">
-
+<#include "/templates/cabecera.ftl">
     <!--CONTENIDO-->
     <div class="contenido">
         <div class="imgIndex"><img src="imgs/LOGOFS5.jpg" alt=""></div>
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <#include "/templates/footer.ftl">
+<#include "/templates/footer.ftl">
 
 </body>
 </html>

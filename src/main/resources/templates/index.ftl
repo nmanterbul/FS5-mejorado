@@ -1,32 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-
-    <!--CABECERA-->
-    <div class="cabecera">
-        <div class="backButton" style="opacity: 0;"><a href="index.html"><img src="imgs/backButton.png" alt=""></a></div>
-        <div><h1>FS5</h1></div>
-        <div class="logo"><img src="imgs/LOGOFS5.jpg" alt=""></div>
-    </div>
-
+    
+<#include "/templates/cabecera.ftl">
     <!--CONTENIDO-->
     <div class="contenido">
         <div class="imgIndex"><img src="imgs/LOGOFS5.jpg" alt=""></div>
         <div class="botonesMain">
-            <a href="competicionesIndex">
+            <a href="/competicionesIndex">
                 <div class="boton">
                     <span>COMPETICIONES</span>
                 </div>
             </a>
-            <a href="equiposIndex">
+            <a href="/equiposIndex">
                 <div class="boton">
                     <span>EQUIPOS</span>
                 </div>
@@ -38,8 +32,9 @@
             </a>
         </div>
     </div>
+ 
+<#include "/templates/footer.ftl">
 
-    <#include "footer.ftl">
 
 </body>
 </html>

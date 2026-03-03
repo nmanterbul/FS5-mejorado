@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,13 +15,13 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form>
+            <form method="POST">
                 <div class="Titulo">
-                    <label for="TORNEO">NOMBRE DEL JUGADOR</label>
+                    <label for="jugadorName">NOMBRE DEL JUGADOR</label>
+                    <input type="text" name="jugadorName" value="">
                 </div>
                 <div>
                     <br>
-                    <input type="text" name="TORNEO">
                 </div>
 
                 <br>
@@ -30,6 +31,14 @@
                     </div>
 
                 </div>
+                <br>
+                    <div class="opciones">
+                       <input type="radio" name="pos" value=""> Portero
+                       <input type="radio" name="pos" value=""> Cierre
+                       <input type="radio" name="pos" value=""> Ala
+                       <input type="radio" name="pos" value=""> Pivot
+                    </div>
+                <br>
 
                 <br>
 
@@ -39,7 +48,7 @@
 
 
                 <div class="guardar">
-                    <a href="OpcionesDeJugadores.html">CREAR JUGADOR</a>
+                    <a href="/gestion/equipos/gestionEquipos.ftl">CREAR JUGADOR</a>
                 </div>
 
 

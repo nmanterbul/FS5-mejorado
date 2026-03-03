@@ -11,22 +11,23 @@ import java.util.Map;
 
 public class FS5controller {
 
-    public static void servirIndex(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        context.render("/templates/index.ftl", model);
-    }
+    private static final User user = new User();
 
-    public static void servirLogin(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/");
-        context.render("/templates/login.ftl", model);
-    }
-
+    //region indexs
+        //region index
+        public static void servirIndex(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            context.render("/templates/index.ftl", model);
+        }
+        //endregion
+        //region competiciones
     public static void servirCompeticionesIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/");
         context.render("/templates/competiciones/competicionesIndex.ftl", model);
     }
+    //endregion
+        //region equipos
 
     public static void servirEquiposIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
@@ -40,84 +41,19 @@ public class FS5controller {
         context.render("/templates/equipos/tablaEquipos.ftl", model);
     }
 
-    public static void servirGestion(@NotNull Context context) {
+    public static void servirEquipo(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/login");
-        context.render("/templates/gestion/gestion.ftl", model);
+        model.put("backURL", "/tablaEquipos/{id}");
+        context.render("/templates/equipos/equipo.ftl", model);
     }
 
-    public static void servirGestionTorneos(@NotNull Context context) {
+    //endregion
+        //region login
+    public static void servirLogin(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestion");
-        context.render("/templates/gestion/torneos/gestionTorneos.ftl", model);
+        model.put("backURL", "/");
+        context.render("/templates/login.ftl", model);
     }
-
-    public static void servirGestionEquipos(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestion");
-        context.render("/templates/gestion/equipos/gestionEquipos.ftl", model);
-    }
-
-    public static void servirGestionJugadores(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestion");
-        context.render("/templates/gestion/jugadores/gestionJugadores.ftl", model);
-    }
-
-    public static void servirCrearTorneo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionTorneos");
-        context.render("/templates/gestion/torneos/crearTorneo.ftl", model);
-    }
-
-    public static void servirEditarTorneo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionTorneos");
-        context.render("/templates/gestion/torneos/editarTorneo.ftl", model);
-    }
-
-    public static void servirBorrarTorneo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionTorneos");
-        context.render("/templates/gestion/torneos/borrarTorneo.ftl", model);
-    }
-
-    public static void servirCrearEquipo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/crearEquipo.ftl", model);
-    }
-
-    public static void servirEditarEquipo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/editarEquipo.ftl", model);
-    }
-
-    public static void servirBorrarEquipo(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
-    }
-
-    public static void servirCrearJugador(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionJugadores");
-        context.render("/templates/gestion/jugadores/crearJugador.ftl", model);
-    }
-
-    public static void servirEditarJugador(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionJugadores");
-        context.render("/templates/gestion/jugadores/editarJugador.ftl", model);
-    }
-
-    public static void servirBorrarJugador(@NotNull Context context) {
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/gestionJugadores");
-        context.render("/templates/gestion/jugadores/borrarJugador.ftl", model);
-    }
-
     public static void login(Context context){
         Map<String, Object> model = new HashMap<>();
         model.put("username", "username");
@@ -133,6 +69,105 @@ public class FS5controller {
         }else {
             context.render("templates/error.ftl", model);
         }
-
     }
+    //endregion
+    //endregion
+    //region gestion
+
+        public static void servirGestion(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/login");
+            context.render("/templates/gestion/gestion.ftl", model);
+        }
+
+        //region Gestion Torneos
+
+        public static void servirGestionTorneos(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestion");
+            context.render("/templates/gestion/torneos/gestionTorneos.ftl", model);
+        }
+
+        public static void servirCrearTorneo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionTorneos");
+            context.render("/templates/gestion/torneos/crearTorneo.ftl", model);
+        }
+
+        public static void servirEditarTorneo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionTorneos");
+            context.render("/templates/gestion/torneos/editarTorneo.ftl", model);
+        }
+
+        public static void servirBorrarTorneo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionTorneos");
+            context.render("/templates/gestion/torneos/borrarTorneo.ftl", model);
+        }
+
+        //endregion Gestion Torneos
+        //region Gestion Equipos
+
+        public static void servirGestionEquipos(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestion");
+            context.render("/templates/gestion/equipos/gestionEquipos.ftl", model);
+        }
+
+        public static void servirCrearEquipo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionEquipos");
+            context.render("/templates/gestion/equipos/crearEquipo.ftl", model);
+        }
+
+        public static void servirEditarEquipo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionEquipos");
+            context.render("/templates/gestion/equipos/editarEquipo.ftl", model);
+        }
+
+        public static void servirBorrarEquipo(@NotNull Context context) {
+            Map<String, Object> model = new HashMap<>();
+            model.put("backURL", "/admin/gestionEquipos");
+            context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
+        }
+
+        //endregion Gestion Equipos
+        //region Gestion Jugadores
+
+    public static void servirGestionJugadores(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/admin/gestion");
+        context.render("/templates/gestion/jugadores/gestionJugadores.ftl", model);
+    }
+
+    public static void servirCrearJugador(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/admin/gestionJugadores");
+        context.render("/templates/gestion/jugadores/crearJugador.ftl", model);
+    }
+
+    public static void servirEditarJugador(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/admin/gestionJugadores");
+        context.render("/templates/gestion/jugadores/editarJugador.ftl", model);
+    }
+
+    public static void servirBorrarJugador(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/admin/gestionJugadores");
+        context.render("/templates/gestion/jugadores/borrarJugador.ftl", model);
+    }
+
+    //endregion
+
+    //endregion
+
+    public static void admin(@NotNull Context context) {
+       if (user.getRol() == 1){
+           context.redirect("/admin/gestion");
+       }
+    }
+
 }

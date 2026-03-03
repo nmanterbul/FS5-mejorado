@@ -17,33 +17,29 @@
             <form>
                 <div class="Titulo">
                     <label for="TORNEO">NOMBRE DEL JUGADOR</label>
-                </div>
-                <div>
                     <br>
                     <input type="text" name="TORNEO">
                 </div>
-
                 <br>
                 <div class="añadirOpcion">
                     <div class="botonGestion">
-                         <a href="EquiposIndex.html">AÑADIR FOTO JUGADOR</a>
+                        <a href="EquiposIndex.html">AÑADIR FOTO JUGADOR</a>
                     </div>
-
+                    <div class="foto">
+                        <img src="/img/Persona.jpg" width="100px">
+                    </div>
                 </div>
-
                 <br>
-
-                <div class="foto">
-                    <img src="/img/Persona.jpg" width="100px">
-                </div>
-
-
-                <div class="guardar">
+                 <div class="opciones">
+                    <input type="radio" name="pos"> Portero
+                    <input type="radio" name="pos"> Cierre
+                    <input type="radio" name="pos"> Ala
+                    <input type="radio" name="pos"> Pivot
+                 </div>
+                 <br>
+                 <div class="guardar">
                     <a href="OpcionesDeJugadores.html">CREAR JUGADOR</a>
-                </div>
-
-
-
+                 </div>
             </form>
         </div>
     </div>

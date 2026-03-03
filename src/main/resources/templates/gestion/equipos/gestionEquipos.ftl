@@ -14,13 +14,13 @@
     <div class="contenedor">
 
         <div class="cuadrado">
-            <a href="crearEquipo">CREAR</a>
+            <a href="/admin/crearEquipo">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="editarEquipo">EDITAR</a>
+            <a href="/admin/editarEquipo">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="borrarEquipo">BORRAR</a>
+            <a href="/admin/borrarEquipo">BORRAR</a>
         </div>
 
     </div>

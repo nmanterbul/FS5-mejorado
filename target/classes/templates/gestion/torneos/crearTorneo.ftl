@@ -39,7 +39,6 @@
                     <br>
                     <input type="radio" name="Logo">
                     <label for="Logo"><img src="/imgs/xota.png" width="40px"> Xota </label>
-
                 </div>
 
                 <div class="guardar">

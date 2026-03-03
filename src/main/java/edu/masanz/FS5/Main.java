@@ -29,6 +29,8 @@ public class Main {
             config.fileRenderer(new JavalinFreemarker());
         }).start(8080);
 
+        app.before("/admin*",FS5controller::admin);
+
         // PRINCIPAL
         app.get("/", FS5controller::servirIndex);
         // INDEX
@@ -36,24 +38,29 @@ public class Main {
         app.get("/competicionesIndex", FS5controller::servirCompeticionesIndex);
         app.get("/equiposIndex", FS5controller::servirEquiposIndex);
         app.get("/tablaEquipos/{id}", FS5controller::servirTablaEquipos);
+        app.get("/equipo", FS5controller::servirEquipo);
+
+
+
+
         // ZONA ADMINISTRADOR
-        app.post("/gestion", FS5controller::login);
-        app.get("/gestion", FS5controller::servirGestion);
-        app.get("/gestionTorneos", FS5controller::servirGestionTorneos);
-        app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
-        app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
+        app.post("/admin/gestion", FS5controller::login);
+        app.get("/admin/gestion", FS5controller::servirGestion);
+        app.get("/admin/gestionTorneos", FS5controller::servirGestionTorneos);
+        app.get("/admin/gestionEquipos", FS5controller::servirGestionEquipos);
+        app.get("/admin/gestionJugadores", FS5controller::servirGestionJugadores);
         // TORNEOS
-        app.get("/crearTorneo", FS5controller::servirCrearTorneo);
-        app.get("/editarTorneo", FS5controller::servirEditarTorneo);
-        app.get("/borrarTorneo", FS5controller::servirBorrarTorneo);
+        app.get("/admin/crearTorneo", FS5controller::servirCrearTorneo);
+        app.get("/admin/editarTorneo", FS5controller::servirEditarTorneo);
+        app.get("/admin/borrarTorneo", FS5controller::servirBorrarTorneo);
         // EQUIPOS
-        app.get("/crearEquipo", FS5controller::servirCrearEquipo);
-        app.get("/editarEquipo", FS5controller::servirEditarEquipo);
-        app.get("/borrarEquipo", FS5controller::servirBorrarEquipo);
+        app.get("/admin/crearEquipo", FS5controller::servirCrearEquipo);
+        app.get("/admin/editarEquipo", FS5controller::servirEditarEquipo);
+        app.get("/admin/borrarEquipo", FS5controller::servirBorrarEquipo);
         // JUGADORES
-        app.get("/crearJugador", FS5controller::servirCrearJugador);
-        app.get("/editarJugador", FS5controller::servirEditarJugador);
-        app.get("/borrarJugador", FS5controller::servirBorrarJugador);
+        app.get("/admin/crearJugador", FS5controller::servirCrearJugador);
+        app.get("/admin/editarJugador", FS5controller::servirEditarJugador);
+        app.get("/admin/borrarJugador", FS5controller::servirBorrarJugador);
     }
 
 

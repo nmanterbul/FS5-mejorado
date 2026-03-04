@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearTorneo.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearTorneo</title>
+    <link rel="stylesheet"  type="text/css" href="/css/editarTorneo.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
-
-        <#include "/templates/cabecera.ftl">
+  <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
 
         <div class="formulario">
-            <form>
+            <form >
                 <div class="Titulo">
                     <label for="TORNEO">NOMBRE DEL TORNEO</label>
                 </div>
@@ -24,9 +24,15 @@
                 </div>
 
                 <br>
-                <div class="botonGestion">
-                    <a href="equiposIndex">+ AÑADIR EQUIPO</a>
-                    <br>
+                <div class="añadirOpcion">
+                    <div class="botonGestion">
+                         <a href="equiposIndex">AÑADIR EQUIPO</a>
+                    </div>
+
+                    <div class="botonGestion">
+                        <a href="borrarEquipo"> ELIMINAR EQUIPO</a>
+                    </div>
+
                 </div>
 
                 <br>
@@ -47,13 +53,27 @@
                 </div>
 
 
+
             </form>
         </div>
     </div>
 
-
-
-    <#include "/templates/footer.ftl">
+    <!--PIE-->
+    <div class="pie">
+        <div class="copy">
+            <span>COPYRIGHT</span>
+            <div  class="content"><span>© 2026 FS5. Todos los derechos reservados.</span></div>
+        </div>
+        <div class="contacto">
+            <span>CONTACTO</span>
+            <div class="content"><span>📧 contacto@FS5.com</span></div>
+            <div class="content"><span>📞 +34 900 123 456</span></div>
+        </div>
+        <div class="rrss">
+            <span>REDES SOCIALES</span>
+            <div  class="content"><img src="/img/insta.jpg" alt=""><img src="/img/X.png" alt=""><img src="/img/Youtube.png" alt=""></div>
+        </div>
+    </div>
 
 </body>
 </html>

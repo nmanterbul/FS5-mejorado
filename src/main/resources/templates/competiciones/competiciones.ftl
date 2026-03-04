@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="/css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 
 <body>
@@ -21,10 +24,10 @@
                 <span>COMPETICIONES</span>
             </div>
             <div class="botonPeque">
-                <a href=""><span>1º DIVISIÓN</span></a>
+                <a href="tablaJornadas"><span>1º DIVISIÓN</span></a>
             </div>
             <div class="botonPeque">
-                <a href= ""><span>2º DIVISIÓN</span></a>
+                <a href= "tablaJornadas"><span>2º DIVISIÓN</span></a>
             </div>
         </div>
     </div>

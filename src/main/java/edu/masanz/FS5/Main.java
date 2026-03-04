@@ -37,6 +37,8 @@ public class Main {
         app.get("/equiposIndex", FS5controller::servirEquiposIndex);
         app.get("/tablaEquipos", FS5controller::servirTablaEquipos);
 
+        // Jornadas
+        app.get("/tablaJornadas", FS5controller::servirTablaJornadas);
 
         // ZONA ADMINISTRADOR
         app.post("/gestion", UsersController::login);
@@ -45,6 +47,7 @@ public class Main {
         app.get("/gestionEquipos", FS5controller::servirGestionEquipos);
         app.get("/gestionJugadores", FS5controller::servirGestionJugadores);
         // TORNEOS
+
         app.get("/crearTorneo", FS5controller::servirCrearTorneo);
         app.get("/editarTorneo", FS5controller::servirEditarTorneo);
         app.get("/borrarTorneo", FS5controller::servirBorrarTorneo);
@@ -57,9 +60,12 @@ public class Main {
         app.post("/crearJugador", FS5controller::crearJugador);
 
         app.get("/editarJugador", FS5controller::servirEditarJugador);
-        app.post("/editarJugador", FS5controller::editarJugador);
+
         app.get("/borrarJugador", FS5controller::servirBorrarJugador);
-        app.post("/borrarJugador", FS5controller::borrarJugador);
+
+
+        app.get("/listarJugador", FS5controller::servirListaJugador);
+
 
 
 

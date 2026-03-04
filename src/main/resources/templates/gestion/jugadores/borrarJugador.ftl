@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/gestion.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/borrarJugador.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -35,7 +35,7 @@
                     <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
                 </div>
                 <div class="eliminar">
-                     <a href="OpcionesDeJugadores.html">ELIMINAR</a>
+                     <a href="gestionJugadores">ELIMINAR</a>
                 </div>
             </form>
         </div>

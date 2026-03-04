@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/editarEquipo.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -26,11 +26,11 @@
                 <br>
                 <div class="añadirOpcion">
                     <div class="botonGestion">
-                    <a href="ListaJugador.html">AÑADIR JUGADOR</a>
+                    <a href="listarJugador">AÑADIR JUGADOR</a>
                     <br>
                     </div>
                     <div class="botonGestion">
-                        <a href="ListaJugador.html">ELIMINAR JUGADOR</a>
+                        <a href="borrarJugador">ELIMINAR JUGADOR</a>
                         <br>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
+                    <a href="gestionEquipos">GUARDAR CAMBIOS</a>
                 </div>
 
 

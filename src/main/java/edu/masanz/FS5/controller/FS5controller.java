@@ -7,6 +7,7 @@ import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -135,19 +136,19 @@ public class FS5controller {
     public static void servirCrearJugador(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
+        context.render("/templates/gestion/jugadores/crearJugador.ftl", model);
     }
 
     public static void servirEditarJugador(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
+        context.render("/templates/gestion/jugadores/editarJugador.ftl", model);
     }
 
     public static void servirBorrarJugador(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/gestionEquipos");
-        context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
+        context.render("/templates/gestion/jugadores/borrarJugador.ftl", model);
     }
 
     //endregion
@@ -186,12 +187,36 @@ public class FS5controller {
 
     }
 
-    public static void borrarJugador(@NotNull Context context) {
-        String jugadorName = context.formParam("jugadorName");
+    public static void borrarJugador(@NotNull Context ctx) {
+//        String nombre = ctx.sessionAttribute("alias");
+//        int numpagina = ctx.sessionAttribute("numpagina");
+//        Map<String, List<String>> id = ctx.formParamMap();
+//        for (Map.Entry<String, List<String>> entry : id.entrySet()) {
+//            String key = entry.getKey();
+//            if (key.startsWith("id_")) {
+//                int numpregunta = Integer.parseInt(key.substring("id_".length()));
+//                int valor = Integer.parseInt(entry.getValue().get(0));
+//                System.out.println(key + " = " + valor);
+//                encuestaService.upsertResultado(nombre, numpregunta, valor);
+//            }
 
 
-        JugadorDao.eliminarPorNombre(jugadorName);
+    }
 
+
+
+    public static void servirListaJugador(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/crearEquipo");
+        context.render("/templates/gestion/jugadores/ListarJugador.ftl", model);
+
+    }
+
+    public static void servirTablaJornadas(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas1.ftl", model);
 
     }
 }

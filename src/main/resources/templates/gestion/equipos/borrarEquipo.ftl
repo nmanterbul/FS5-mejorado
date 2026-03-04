@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/borrarEquipo.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="eliminar">
-                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
+                    <a href="gestionEquipos">ELIMINAR</a>
                 </div>
 
 

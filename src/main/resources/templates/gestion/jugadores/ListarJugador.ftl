@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearEquipo.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearTorneo</title>
 
+    <link rel="stylesheet"  type="text/css" href="/css/listarJugador.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
-
-    <#include "/templates/cabecera.ftl">
-
+   <#include "/templates/cabecera.ftl">
     <div class="contenedor">
 
         <div class="formulario">
             <form>
                 <div class="Titulo">
-                    <label for="TORNEO">NOMBRE DEL EQUIPO</label>
+                    <label for="TORNEO"> JUGADORES</label>
                 </div>
                 <div>
                     <br>
                     <input type="text" name="TORNEO">
                 </div>
 
+
+
                 <br>
-                <div class="botonGestion">
-                    <a href="listarJugador">AÑADIR JUGADOR</a>
-                    <br>
-                </div>
 
                 <br>
                 <div class="opciones">
@@ -43,8 +40,20 @@
 
                 </div>
 
-                <div class="crear">
-                    <a href="gestionEquipos">CREAR EQUIPO</a>
+
+             <#if x == 1>
+               <div class="añadir">
+                 <a href="/crearEquipo">AÑADIR</a>
+               </div>
+             <#else>d
+             <div class="añadir">
+                <a href="/editarEquipo">AÑADIR</a>
+             </div>
+             </#if>
+
+
+                <div class="añadir">
+                    <a href="/crearEquipo">AÑADIR</a>
                 </div>
 
 
@@ -53,8 +62,7 @@
         </div>
     </div>
 
-
-     <#include "/templates/footer.ftl">
+    <#include "/templates/footer.ftl">
 
 </body>
 </html>

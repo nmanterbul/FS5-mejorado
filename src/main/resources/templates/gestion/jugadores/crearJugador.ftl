@@ -12,38 +12,29 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
-
         <div class="formulario">
             <form>
-                <div class="Titulo">
+                <div class="titulo">
                     <label for="TORNEO">NOMBRE DEL JUGADOR</label>
-                </div>
-                <div>
-                    <br>
                     <input type="text" name="TORNEO">
                 </div>
-
-                <br>
-                <div class="añadirOpcion">
+                <div class="addOpcion">
                     <div class="botonGestion">
-                         <a href="EquiposIndex.html">AÑADIR FOTO JUGADOR</a>
+                        <a href="EquiposIndex.html">AÑADIR FOTO JUGADOR</a>
                     </div>
-
                 </div>
-
-                <br>
-
                 <div class="foto">
                     <img src="/img/Persona.jpg" width="100px">
                 </div>
-
-
+                <div class="opciones">
+                    <input type="radio" name="pos"> Portero
+                    <input type="radio" name="pos"> Cierre
+                    <input type="radio" name="pos"> Ala
+                    <input type="radio" name="pos"> Pivot
+                </div>
                 <div class="guardar">
                     <a href="OpcionesDeJugadores.html">CREAR JUGADOR</a>
                 </div>
-
-
-
             </form>
         </div>
     </div>

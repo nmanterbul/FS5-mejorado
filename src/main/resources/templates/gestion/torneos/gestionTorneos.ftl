@@ -12,15 +12,17 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
+
         <div class="cuadrado">
-            <a href="/admin/gestionTorneos">TORNEOS</a>
+            <a href="/admin/crearTorneo">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/admin/gestionEquipos">EQUIPOS</a>
+            <a href="/admin/editarTorneo">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/admin/gestionJugadores">JUGADORES</a>
+            <a href="/admin/borrarTorneo">BORRAR</a>
         </div>
+
     </div>
 
    <#include "/templates/footer.ftl">

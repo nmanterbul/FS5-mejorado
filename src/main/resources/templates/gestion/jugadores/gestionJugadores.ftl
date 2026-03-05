@@ -14,13 +14,13 @@
     <div class="contenedor">
 
         <div class="cuadrado">
-            <a href="crearJugador">CREAR</a>
+            <a href="/admin/crearJugador">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="editarJugador">EDITAR</a>
+            <a href="/admin/editarJugador">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="borrarJugador">BORRAR</a>
+            <a href="/admin/borrarJugador">BORRAR</a>
         </div>
 
     </div>

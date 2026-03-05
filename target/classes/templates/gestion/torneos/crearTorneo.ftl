@@ -12,7 +12,6 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
-
         <div class="formulario">
             <form>
                 <div class="Titulo">
@@ -22,13 +21,11 @@
                     <br>
                     <input type="text" name="TORNEO">
                 </div>
-
                 <br>
                 <div class="botonGestion">
                     <a href="EquiposIndex">+ AÑADIR EQUIPO</a>
                     <br>
                 </div>
-
                 <br>
                 <div class="opciones">
                      <input type="radio" name="Logo">
@@ -40,12 +37,9 @@
                     <input type="radio" name="Logo">
                     <label for="Logo"><img src="/imgs/xota.png" width="40px"> Xota </label>
                 </div>
-
                 <div class="guardar">
                     <a href="OpcionesDeGestión.html">GUARDAR CAMBIOS</a>
                 </div>
-
-
             </form>
         </div>
     </div>

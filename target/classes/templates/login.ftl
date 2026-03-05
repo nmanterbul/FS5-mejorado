@@ -12,34 +12,29 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
-
         <form class="login" action="admin/gestion" method ="post">
-            <div class="Titulo">
+            <div class="titulo">
                  <p>Sign In</p>
             </div>
-
-            <div class="Formulario">
+            <div class="formulario">
                 <div class="campo">
                     <label name="username">Usuario: </label>
                     <input type="text" name = "username">
                     <span>👤</span>
                     <br>
                 </div>
-
                 <div class="campo">
                     <label name = "pass">Contraseña: </label>
                     <input type="password" name = "pass">
                     <span>🔒</span>
                 </div>
                 <br>
-
             </div>
-             <div class="Login">
-                <input name="Login" type="submit" value="Login">
+            <div class="login">
+                <input name="login" type="submit" value="login">
             </div>
         </form>
     </div>
-    <br>
 
     <#include "/templates/footer.ftl">
 

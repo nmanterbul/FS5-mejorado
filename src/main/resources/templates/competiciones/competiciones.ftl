@@ -24,10 +24,10 @@
                 <span>COMPETICIONES</span>
             </div>
             <div class="botonPeque">
-                <a href="tablaJornadas"><span>1º DIVISIÓN</span></a>
+                <a href="tablaJornadas1"><span>1º DIVISIÓN</span></a>
             </div>
             <div class="botonPeque">
-                <a href= "tablaJornadas"><span>2º DIVISIÓN</span></a>
+                <a href= "tablaJornadas1"><span>2º DIVISIÓN</span></a>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form >
+            <form action="gestionTorneos">
                 <div class="Titulo">
                     <label for="TORNEO">NOMBRE DEL TORNEO</label>
                 </div>
@@ -48,9 +48,14 @@
 
                 </div>
 
-                <div class="guardar">
-                    <a href="gestionTorneos">GUARDAR CAMBIOS</a>
-                </div>
+                
+
+
+                 <button class="guardar">
+                    <input type="submite">
+                    <label>GUARDAR CAMBIOS</label>
+                </button>
+                
 
 
 

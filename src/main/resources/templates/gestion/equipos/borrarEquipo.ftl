@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/borrarEquipo.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -18,10 +18,6 @@
                 <div class="Titulo">
                    <span>EQUIPOS</span>
                 </div>
-
-
-
-
                 <br>
                 <div class="opciones">
                      <input type="radio" name="Logo">
@@ -32,15 +28,10 @@
                     <br>
                     <input type="radio" name="Logo">
                     <label for="Logo"><img src="/img/Logo Real Madrid.png" width="40px"> Real Madrid </label>
-
                 </div>
-
                 <div class="eliminar">
-                    <a href="gestionEquipos">ELIMINAR</a>
+                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
                 </div>
-
-
-
             </form>
         </div>
     </div>

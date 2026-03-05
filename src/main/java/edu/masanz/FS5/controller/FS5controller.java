@@ -212,11 +212,83 @@ public class FS5controller {
 
     }
 
-    public static void servirTablaJornadas(@NotNull Context context) {
 
+
+    public static void servirTablaJornadas1(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/competiciones");
         context.render("/templates/jornadas/tablaJornadas1.ftl", model);
+    }
+
+    public static void servirTablaJornadas2(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas2.ftl", model);
+
+
+    }
+
+    public static void servirTablaJornadas3(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas3.ftl", model);
+    }
+
+    public static void servirTablaJornadas4(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas4.ftl", model);
+    }
+
+    public static void servirTablaJornadas5(@NotNull Context context) {
+
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas5.ftl", model);
+    }
+
+    public static void servirTablaJornadas6(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas6.ftl", model);
+    }
+
+    public static void servirTablaJornadas7(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas7.ftl", model);
+    }
+
+    public static void servirTablaJornadas8(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas8.ftl", model);
+    }
+
+    public static void servirTablaJornadas9(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/jornadas/tablaJornadas9.ftl", model);
+    }
+
+    public static void servirTablaClasificación(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/tablaClasificacion.ftl", model);
+
+    }
+
+    public static void servirTablaGoleadores(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/competiciones");
+        context.render("/templates/tablaGoleadores.ftl", model);
 
     }
 }

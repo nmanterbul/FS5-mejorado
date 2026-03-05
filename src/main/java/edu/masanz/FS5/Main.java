@@ -38,7 +38,21 @@ public class Main {
         app.get("/tablaEquipos", FS5controller::servirTablaEquipos);
 
         // Jornadas
-        app.get("/tablaJornadas", FS5controller::servirTablaJornadas);
+        app.get("/tablaJornadas1", FS5controller::servirTablaJornadas1);
+        app.get("/tablaJornadas2", FS5controller::servirTablaJornadas2);
+        app.get("/tablaJornadas3", FS5controller::servirTablaJornadas3);
+        app.get("/tablaJornadas4", FS5controller::servirTablaJornadas4);
+        app.get("/tablaJornadas5", FS5controller::servirTablaJornadas5);
+        app.get("/tablaJornadas6", FS5controller::servirTablaJornadas6);
+        app.get("/tablaJornadas7", FS5controller::servirTablaJornadas7);
+        app.get("/tablaJornadas8", FS5controller::servirTablaJornadas8);
+        app.get("/tablaJornadas9", FS5controller::servirTablaJornadas9);
+
+        // Clasificacion
+        app.get("/tablaClasificacion", FS5controller::servirTablaClasificación);
+
+        //Goleadores
+        app.get("/tablaGoleadores", FS5controller::servirTablaGoleadores);
 
         // ZONA ADMINISTRADOR
         app.post("/gestion", UsersController::login);

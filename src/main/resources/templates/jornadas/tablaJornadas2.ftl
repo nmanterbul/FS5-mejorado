@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Jornadas</title>
-  <link rel="stylesheet"  type="text/css" href="/css/TablaJornada.css"/>
+   <link rel="stylesheet"  type="text/css" href="/css/TablaJornada.css"/>
           <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
           <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -14,15 +14,15 @@
     <div class="cabecera2">
         <div class="eleccion">
             <a  id="JORNADAS">JORNADAS</a>
-            <a href="TablaClasificación" id="CLASIFICACIÓN">CLASIFICACIÓN</a>
-            <a href="TablaGoleadores" id="GOLEADORES">TABLA DE GOLEADORES</a>
+            <a href="tablaClasificacion" id="CLASIFICACIÓN">CLASIFICACIÓN</a>
+            <a href="tablaGoleadores" id="GOLEADORES">TABLA DE GOLEADORES</a>
         </div>
         <div class="jornadas">
             <div class="cambiar">
-                <a href="tablaJornada1" id="atras">
+                <a href="tablaJornadas1" id="atras">
                     <img src="img/flechitaAtras.png" width="60"/></a>
                 <span>Jornada 2</span>
-                <a href="tablaJornada3" id="siguiente">
+                <a href="tablaJornadas3" id="siguiente">
                     <img src="img/flechita.png" width="60"/></a>
             </div>
         </div>

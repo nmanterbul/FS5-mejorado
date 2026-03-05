@@ -13,7 +13,7 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form>
+            <form  action="gestionTorneos">
                 <div class="Titulo">
                     <label for="TORNEO">TORNEOS</label>
                 </div>
@@ -30,10 +30,16 @@
 
                 </div>
 
-                <div class="eliminar">
-                    <a href="gestionTorneos">ELIMINAR </a>
-                    <span></span>
-                </div>
+                
+
+                 <button class="eliminar">
+                    <input type="submite">
+                    <label>ELIMINAR</label>
+                </button>
+                
+
+
+
             </form>
         </div>
     </div>

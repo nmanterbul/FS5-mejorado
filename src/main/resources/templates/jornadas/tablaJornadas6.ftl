@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Jornadas</title>
-
-
-    <link rel="stylesheet"  type="text/css" href="/css/TablaJornada.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+     <link rel="stylesheet"  type="text/css" href="/css/TablaJornada.css"/>
+            <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
+            <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
     <#include "/templates/cabecera.ftl">
@@ -18,15 +16,14 @@
             <a href="tablaClasificacion" id="CLASIFICACIÓN">CLASIFICACIÓN</a>
             <a href="tablaGoleadores" id="GOLEADORES">TABLA DE GOLEADORES</a>
         </div>
-
+    </div>
     <div class="jornadas">
         <div class="cambiar">
-            <a href="" id="atras"><img src="img/flechitaAtras.png" width="60"/></a>
-            <span>Jornada 1</span>
-            <a href="tablaJornadas2" id="siguiente"><img src="img/flechita.png" width="60"/></a>
+            <a href="tablaJornadas5" id="atras"><img src="img/flechitaAtras.png" width="60"/></a>
+            <span>Jornada 6</span>
+            <a href="tablaJornadas7" id="siguiente"><img src="img/flechita.png" width="60"/></a>
         </div>
-</div>
-
+    </div>
         <div class="equipos">
             <table>
                 <tr>
@@ -73,7 +70,7 @@
             </table>
         </div>
     </div>
-     <#include "/templates/footer.ftl">
+    <#include "/templates/footer.ftl">
     </div>
 </body>
 </html>

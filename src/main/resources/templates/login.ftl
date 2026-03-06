@@ -21,17 +21,15 @@
                     <label name="username">Usuario: </label>
                     <input type="text" name = "username">
                     <span>👤</span>
-                    <br>
                 </div>
                 <div class="campo">
                     <label name = "pass">Contraseña: </label>
                     <input type="password" name = "pass">
                     <span>🔒</span>
                 </div>
-                <br>
             </div>
             <div class="login">
-                <input name="login" type="submit" value="login">
+                <input name="login" type="submit" value="LOGIN">
             </div>
         </form>
     </div>

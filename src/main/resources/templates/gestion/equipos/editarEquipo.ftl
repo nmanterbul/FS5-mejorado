@@ -15,45 +15,28 @@
 
         <div class="formulario">
             <form>
-                <div class="Titulo">
-                    <label for="TORNEO">NOMBRE DEL EQUIPO</label>
-                </div>
-                <div>
-                    <br>
-                    <input type="text" name="TORNEO">
+                <div class="titulo">
+                    <label for="torneo">NOMBRE DEL EQUIPO</label>
+                    <input type="text" name="torneo">
                 </div>
 
-                <br>
-                <div class="añadirOpcion">
+                <div class="addOpcion">
                     <div class="botonGestion">
-                    <a href="ListaJugador.html">AÑADIR JUGADOR</a>
-                    <br>
+                        <a href="EquiposIndex.html">CAMBIAR ESCUDO</a>
+                    </div>
+                    <div class="foto">
+                        <img src="/imgs/nofotolnfs.jpg" width="100px">
+                    </div>
+                    <div class="botonGestion">
+                        <a href="ListaJugador.html">AÑADIR JUGADOR</a>
                     </div>
                     <div class="botonGestion">
                         <a href="ListaJugador.html">ELIMINAR JUGADOR</a>
-                        <br>
                     </div>
                 </div>
-
-
-                <br>
-                <div class="opciones">
-                     <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
-
-                </div>
-
                 <div class="guardar">
                     <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
                 </div>
-
-
 
             </form>
         </div>

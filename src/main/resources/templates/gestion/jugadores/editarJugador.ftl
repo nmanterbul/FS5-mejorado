@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="foto">
-                    <img src="/img/Persona.jpg" width="100px">
+                    <img src="/imgs/nofotolnfs.jpg" width="100px">
                 </div>
                 <div class="opciones">
                     <input type="radio" name="pos"> Portero

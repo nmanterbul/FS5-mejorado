@@ -14,31 +14,15 @@
     <div class="contenedor">
         <div class="formulario">
             <form>
-                <div class="Titulo">
-                    <label for="TORNEO">NOMBRE DEL TORNEO</label>
+                <div class="titulo">
+                    <label for="torneo">NOMBRE DEL TORNEO</label>
+                    <input type="text" name="torneo">
                 </div>
-                <div>
-                    <br>
-                    <input type="text" name="TORNEO">
-                </div>
-                <br>
                 <div class="botonGestion">
                     <a href="EquiposIndex">+ AÑADIR EQUIPO</a>
-                    <br>
-                </div>
-                <br>
-                <div class="opciones">
-                     <input type="radio" name="Logo">
-                    <label for="Logo"><imgs src="/imgs/FC_Barcelona.png" width="40px"> FC Barcelona </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/imgs/ribera.jpg" width="40px"> Ribera Navarra </label>
-                    <br>
-                    <input type="radio" name="Logo">
-                    <label for="Logo"><img src="/imgs/xota.png" width="40px"> Xota </label>
                 </div>
                 <div class="guardar">
-                    <a href="OpcionesDeGestión.html">GUARDAR CAMBIOS</a>
+                    <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
                 </div>
             </form>
         </div>

@@ -12,33 +12,23 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
-
         <div class="formulario">
             <form>
-                <div class="Titulo">
-                    <label for="TORNEO">TORNEOS</label>
+                <div class="titulo">
+                    <label for="torneo">TORNEOS</label>
                 </div>
-
-                <br>
                 <div class="opciones">
-                    <label for="torneo">LIGA </label>
-                     <input type="radio" name="torneo">
-                    <label for="torneo"> PLAY OFF TÍTULO</label>
-                    <input type="radio" name="torneo">
-                    <label for="torneo"> PLAY OFF ASCENSO </label>
-                    <input type="radio" name="torneo">
-
-
+                   <input type="checkbox" name="pos"> Barcelona <br>
+                   <input type="checkbox" name="pos"> Barcelona <br>
+                   <input type="checkbox" name="pos"> Barcelona <br>
+                   <input type="checkbox" name="pos"> Barcelona <br>
                 </div>
-
-                <div class="eliminar">
-                    <a href="OpcionesDeGestión.html">ELIMINAR </a>
-                    <span></span>
+                <div class="guardar">
+                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
                 </div>
             </form>
         </div>
     </div>
-
 
     <#include "/templates/footer.ftl">
 

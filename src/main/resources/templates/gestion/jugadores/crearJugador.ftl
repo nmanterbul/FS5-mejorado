@@ -15,8 +15,8 @@
         <div class="formulario">
             <form>
                 <div class="titulo">
-                    <label for="TORNEO">NOMBRE DEL JUGADOR</label>
-                    <input type="text" name="TORNEO">
+                    <label for="torneo">NOMBRE DEL JUGADOR</label>
+                    <input type="text" name="torneo">
                 </div>
                 <div class="addOpcion">
                     <div class="botonGestion">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="foto">
-                    <img src="/img/Persona.jpg" width="100px">
+                    <img src="/imgs/nofotolnfs.jpg" width="100px">
                 </div>
                 <div class="opciones">
                     <input type="radio" name="pos"> Portero

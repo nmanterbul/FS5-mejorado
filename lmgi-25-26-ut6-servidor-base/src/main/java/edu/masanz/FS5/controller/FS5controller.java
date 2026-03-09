@@ -1,13 +1,11 @@
 package edu.masanz.FS5.controller;
 
-import edu.masanz.FS5.dao.JugadorDao;
 import edu.masanz.FS5.model.Jugador;
 import edu.masanz.FS5.service.JugadorService;
 import io.javalin.http.Context;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 
@@ -149,18 +147,9 @@ public class FS5controller {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/gestionEquipos");
         context.render("/templates/gestion/jugadores/borrarJugador.ftl", model);
+
+
     }
-
-    //endregion
-
-
-    public static void servirCompeticiones(@NotNull Context context) {
-
-        Map<String, Object> model = new HashMap<>();
-        model.put("backURL", "/");
-        context.render("/templates/competiciones/competiciones.ftl", model);
-    }
-
 
     public static void crearJugador(@NotNull Context context) {
 
@@ -208,11 +197,25 @@ public class FS5controller {
     public static void servirListaJugador(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/crearEquipo");
-        context.render("/templates/gestion/jugadores/ListarJugador.ftl", model);
+        context.render("/templates/gestion/jugadores/listarJugador.ftl", model);
 
     }
 
+    //endregion
 
+
+    public static void servirCompeticiones(@NotNull Context context) {
+
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/");
+        context.render("/templates/competiciones/competiciones.ftl", model);
+    }
+
+
+
+
+
+    //region
 
     public static void servirTablaJornadas1(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
@@ -277,6 +280,10 @@ public class FS5controller {
         model.put("backURL", "/competiciones");
         context.render("/templates/jornadas/tablaJornadas9.ftl", model);
     }
+
+    //endregion
+
+    //region
 
     public static void servirTablaClasificación(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();

@@ -26,11 +26,11 @@
                 <br>
                 <div class="añadirOpcion">
                     <div class="botonGestion">
-                    <a href="ListaJugador.html">AÑADIR JUGADOR</a>
+                    <a href="/listarJugadores/1">AÑADIR JUGADOR</a>
                     <br>
                     </div>
                     <div class="botonGestion">
-                        <a href="ListaJugador.html">ELIMINAR JUGADOR</a>
+                        <a href="/listarJugadores/1">ELIMINAR JUGADOR</a>
                         <br>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
+                    <a href="/gestionEquipos">GUARDAR CAMBIOS</a>
                 </div>
 
 

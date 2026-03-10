@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,7 @@
 
                 <br>
                 <div class="botonGestion">
-                    <a href="ListaJugador.html">AÑADIR JUGADOR</a>
+                    <a href="/listaJugador">AÑADIR JUGADOR</a>
                     <br>
                 </div>
 
@@ -43,7 +44,7 @@
                 </div>
 
                 <div class="crear">
-                    <a href="OpcionesDeEquipo.html">CREAR EQUIPO</a>
+                    <a href="/gestionEquipos">CREAR EQUIPO</a>
                 </div>
 
 

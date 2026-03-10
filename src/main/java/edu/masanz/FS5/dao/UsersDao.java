@@ -6,7 +6,7 @@ import edu.masanz.FS5.model.User;
 public class UsersDao {
 
     public static User login(String username, String password){
-        String select = "Select * from usuarios where username like ? and pass like ? ";
+        String select = "SELECT * FROM usuarios WHERE username like ? AND pass like ?";
         Object[] params = {username, password};
         Object[][] result = ConnectionManager.ejecutarSelectSQL(select, params);
 
@@ -25,11 +25,8 @@ public class UsersDao {
         return null;
     }
 
-    public static void main(String[] args) {
-        ConnectionManager.conectar("FS5_DB","proy","password");
-        User user = login("adri", "adri");
-        System.out.println(user);
 
-    }
+
+
 
 }

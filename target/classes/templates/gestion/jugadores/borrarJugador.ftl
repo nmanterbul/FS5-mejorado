@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +36,7 @@
                     <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
                 </div>
                 <div class="eliminar">
-                     <a href="OpcionesDeJugadores.html">ELIMINAR</a>
+                     <a href="/gestionJugadores">ELIMINAR</a>
                 </div>
             </form>
         </div>

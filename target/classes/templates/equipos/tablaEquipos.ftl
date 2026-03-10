@@ -14,22 +14,11 @@
 
     <!--CONTENIDO-->
     <div class="contenido">
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
-        <div class="equipo"><a href="/equipo"><img src="/imgs/FC_Barcelona.png" alt=""></a><span>FC BARCELONA</span></div>
+        <#list listaEquipos as equipo>
+            <div class="equipo">
+            <a href="/equipo"><img src="imgs/FC_Barcelona.png" alt=""></a><span>${equipo.equipoName}</span>
+            </div>
+        </#list>
     </div>
 
     <#include "/templates/footer.ftl">

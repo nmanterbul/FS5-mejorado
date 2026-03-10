@@ -1,14 +1,12 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
 body{
     margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
 }
+
 .contenedor{
     height: 78vh;
     overflow: scroll;
@@ -16,39 +14,29 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .formulario{
     background: white;
     padding: 5vh;
-    width: 75%;
+    border-radius: 10px;
+    width: 40vh;
     display: flex;
     justify-content: center;
-    border: solid rgba(23,23,77);
-    border-radius: 15px;
-    background-color: #f6f6f6;
-    height: 60%;
 }
-.titulo{
+
+.Titulo{
     color: rgba(23,23,77);
     font-size: 24px;
     text-align: center;
     margin-bottom: 2px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
-.addOpcion{
+
+.añadirOpcion{
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    align-items: center
 }
-.{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center
-}
+
+
 .botonGestion{
     width: 25vw;
     border: 1px solid black;
@@ -56,14 +44,17 @@ body{
     text-align: center;
     background-color: rgba(23,23,77);
 }
+
 .botonGestion a{
     color: white;
 }
+
 .opciones label{
     display: flex;
     align-items: center;
     margin-bottom: 1vh;
 }
+
 .guardar{
     width: 40vw;
     font-size: 20px;
@@ -71,20 +62,12 @@ body{
     border-radius: 7px;
     text-align: center;
     background-color: rgba(23,23,77);
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
+
 .guardar a{
     color: white;
 }
+
 .guardar:hover{
     background-color: #4e548a;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
 }

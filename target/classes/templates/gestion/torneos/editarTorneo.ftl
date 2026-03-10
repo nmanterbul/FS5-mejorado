@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,11 +27,11 @@
                 <br>
                 <div class="añadirOpcion">
                     <div class="botonGestion">
-                         <a href="EquiposIndex.html">AÑADIR EQUIPO</a>
+                         <a href="/equiposIndex">AÑADIR EQUIPO</a>
                     </div>
 
                     <div class="botonGestion">
-                        <a href="borrarTorneo.html"> ELIMINAR EQUIPO</a>
+                        <a href="/equiposIndex"> ELIMINAR EQUIPO</a>
                     </div>
 
                 </div>

@@ -15,18 +15,32 @@
 
         <div class="formulario">
             <form>
-                <div class="titulo">
+                <div class="Titulo">
                    <span>EQUIPOS</span>
                 </div>
+
+
+
+
+                <br>
                 <div class="opciones">
-                   <img src="/imgs/nofotolnfs.jpg" width="30vh"><input type="checkbox" name="pos"> Barcelona <br>
-                   <img src="/imgs/nofotolnfs.jpg" width="30vh"><input type="checkbox" name="pos"> Barcelona <br>
-                   <img src="/imgs/nofotolnfs.jpg" width="30vh"><input type="checkbox" name="pos"> Barcelona <br>
-                   <img src="/imgs/nofotolnfs.jpg" width="30vh"><input type="checkbox" name="pos"> Barcelona <br>
+                     <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Logo Barsa.png" width="40px"> FC Barcelona </label>
+                    <br>
+                    <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Logo Ribera.png" width="40px"> Ribera Navarra </label>
+                    <br>
+                    <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Logo Real Madrid.png" width="40px"> Real Madrid </label>
+
                 </div>
-                <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
+
+                <div class="eliminar">
+                    <a href="/gestionEquipos">ELIMINAR</a>
                 </div>
+
+
+
             </form>
         </div>
     </div>

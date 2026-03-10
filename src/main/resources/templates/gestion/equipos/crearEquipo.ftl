@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,24 +16,39 @@
 
         <div class="formulario">
             <form>
-                <div class="titulo">
-                    <label for="torneo">NOMBRE DEL EQUIPO</label>
+                <div class="Titulo">
+                    <label for="TORNEO">NOMBRE DEL EQUIPO</label>
+                </div>
+                <div>
+                    <br>
                     <input type="text" name="TORNEO">
                 </div>
-                <div class="addOpcion">
-                    <div class="botonGestion">
-                        <a href="EquiposIndex.html">AÑADIR ESCUDO</a>
-                    </div>
-                </div>
-                <div class="foto">
-                    <img src="/imgs/nofotolnfs.jpg" width="100px">
-                </div>
+
+                <br>
                 <div class="botonGestion">
-                    <a href="ListaJugador.html">AÑADIR JUGADOR</a>
+                    <a href="/listaJugador">AÑADIR JUGADOR</a>
+                    <br>
                 </div>
-                <div class="botonGestion">
-                    <a href="OpcionesDeEquipo.html">CREAR EQUIPO</a>
+
+                <br>
+                <div class="opciones">
+                     <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
+                    <br>
+                    <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
+                    <br>
+                    <input type="radio" name="Logo">
+                    <label for="Logo"><img src="/img/Persona.jpg" width="40px"> Pablo García </label>
+
                 </div>
+
+                <div class="crear">
+                    <a href="/gestionEquipos">CREAR EQUIPO</a>
+                </div>
+
+
+
             </form>
         </div>
     </div>

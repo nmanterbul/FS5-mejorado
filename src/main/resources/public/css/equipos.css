@@ -1,0 +1,131 @@
+
+     *{
+        box-sizing: border-box;
+         color: rgba(23, 23, 77);
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+    /*CABECERA (COMÚN A TODOS)*/
+    .cabecera{
+        display: flex;
+        height: 11vh;
+        border-bottom: solid rgba(23,23,77);
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .cabecera h1{
+        color: rgba(23, 23, 77);
+        border-radius: 15px;
+        border: solid rgba(23, 23, 77);
+        text-align: center;
+        align-content: center;
+        font-size: 50px;
+    }
+    .logo img{
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        right: 15px;
+    }
+    .backButton img{
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        left: 15px;
+    }
+    /*-------------------------------*/
+
+
+
+    .contenido{
+        height: 78vh;
+        overflow: scroll;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .tablaEquipo table{
+        width: 100%;
+        font-size: 5vh;
+        border-bottom: solid rgba(23,23,77);
+    }
+    .posicion{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nombreEquipo{
+        font-size: 50px;
+    }
+    .barcelona img{
+        width: 20vw;
+    }
+    .palmares{
+        font-size: 7vh;
+        border-bottom: solid rgba(23,23,77);
+    }
+    .titulos{
+        font-size: 3.5vh;
+    }
+    .imgJugador img{
+        width: 15vw;
+    }
+    .imgJugador{
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 25%;
+        border: solid rgba(23, 23, 77);;
+    }
+    .jugadores{
+        display: flex;
+        flex-direction: column;
+        font-size: 5vh;
+    }
+    .porteros .cierres .alas .pivots{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgsJugadores{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+
+    /*FOOTER(COMÚN A TODOS)*/
+    .pie{
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: solid rgba(23,23,77);
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+        font-size: 1.75vh;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .contacto{
+        border-left: solid rgba(23,23,77);
+        border-right: solid rgba(23,23,77);
+    }
+    .rrss img{
+        width: 3vw;
+    }
+    /*-------------------------------*/

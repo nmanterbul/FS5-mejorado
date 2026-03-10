@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,7 @@
                 <br>
                 <div class="opciones">
                     <label for="torneo">LIGA </label>
-                     <input type="radio" name="torneo">
+                    <input type="radio" name="torneo">
                     <label for="torneo"> PLAY OFF TÍTULO</label>
                     <input type="radio" name="torneo">
                     <label for="torneo"> PLAY OFF ASCENSO </label>
@@ -32,7 +33,7 @@
                 </div>
 
                 <div class="eliminar">
-                    <a href="OpcionesDeGestión.html">ELIMINAR </a>
+                    <a href="/gestionTorneos">ELIMINAR </a>
                     <span></span>
                 </div>
             </form>

@@ -1,0 +1,9 @@
+// TODO: Añadir a la base de datos la tabla "Partidos"-- Lo mismo que pone en la clase Partido.
+// TODO: Añadir a la base de datos de la tabla Equipos nuevas cosas, lo que pone en la clase Equipo.
+// TODO: Añadir a la base de datos de la tabla Jugadores nuevas cosas, lo que pone en la clase Jugador.
+// TODO: Añadir a la tabla de Partidos-- Partidos hasta la jornada 10, a partir de esa jornada decimos que aun no se han jugado, si quereis.
+// TODO: Añadir a la tabla de Equipos-- Nuevos datos que hemos añadido. Si eso los inserts los metemos en orden a como van en la liga. 
+// TODO: Añadir a la tabla de Jugadores-- Nuevos datos, es decir los números de goles, luego para la tabla de Goleadores ya lo ordenaremos.
+// TODO: Añadir al Workbench lo cambiado en Intelij en los inserts y en la creación de tabla.
+
+!!!!AVISO¡¡¡¡ En mi proyecto, he añadido las imgs de los equipos que tenemos metidos, eso si, he puesto que se llaman igual que sus nombres que hemos metido, para que asi en el .ftl podamos poner -- "/imgs/${equipo.equipoName}.png" y entonces yo creo que asi se podrían ver los escudos.

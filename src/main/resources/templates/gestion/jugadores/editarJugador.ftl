@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,29 +13,43 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
+
         <div class="formulario">
-            <form>
-                <div class="titulo">
-                    <label for="torneo">NOMBRE DEL JUGADOR</label>
-                    <input type="text" name="torneo">
+            <form method="POST" action="/editarJugador/ jugador.idJugador">
+                <input type="hidden">
+
+                <div class="Titulo">
+                 <#list listaJugadores as jugador>
+                    <label for="jugadorName">NOMBRE DEL JUGADOR</label>
+                    <input type="text" name="jugadorName" id="jugadorName" value="${jugador.jugadorName}">
+                 </#list>
                 </div>
-                <div class="addOpcion">
+                <div>
+
+                    <br>
+                </div>
+
+                <br>
+                <div class="añadirOpcion">
                     <div class="botonGestion">
-                         <a href="EquiposIndex.html">CAMBIAR FOTO</a>
+                         <a href="/equiposIndex">CAMBIAR FOTO</a>
                     </div>
+
                 </div>
+
+                <br>
+
                 <div class="foto">
-                    <img src="/imgs/nofotolnfs.jpg" width="100px">
+                    <img src="/img/Persona.jpg" width="100px">
                 </div>
-                <div class="opciones">
-                    <input type="radio" name="pos"> Portero
-                    <input type="radio" name="pos"> Cierre
-                    <input type="radio" name="pos"> Ala
-                    <input type="radio" name="pos"> Pivot
-                </div>
+
+
                 <div class="guardar">
-                    <a href="OpcionesDeJugadores.html">GUARDAR CAMBIOS</a>
+                    <button type="submit">GUARDAR CAMBIOS</button>
                 </div>
+
+
+
             </form>
         </div>
     </div>

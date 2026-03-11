@@ -9,23 +9,19 @@
 </head>
 <body>
 
-    <#include "/templates/cabecera.ftl">
-
+<#include "/templates/cabecera.ftl">
     <div class="contenedor">
 
         <div class="cuadrado">
-            <a href="/admin/crearTorneo">CREAR</a>
+            <a href="/crearTorneo">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/admin/editarTorneo">EDITAR</a>
+            <a href="/editarTorneo">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/admin/borrarTorneo">BORRAR</a>
+            <a href="/borrarTorneo">BORRAR</a>
         </div>
-
     </div>
-
-   <#include "/templates/footer.ftl">
-
+<#include "/templates/footer.ftl">
 </body>
 </html>

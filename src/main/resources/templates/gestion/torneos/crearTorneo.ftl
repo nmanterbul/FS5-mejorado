@@ -1,36 +1,35 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
+    <link rel="stylesheet"  type="text/css" href="/css/crearTorneo.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
 
-    <#include "/templates/cabecera.ftl">
+<#include "/templates/cabecera.ftl">
+    <h2>Crear nuevo torneo</h2>
 
     <div class="contenedor">
         <div class="formulario">
-            <form>
-                <div class="titulo">
-                    <label for="torneo">NOMBRE DEL TORNEO</label>
-                    <input type="text" name="torneo">
+            <form action="/crearTorneo" method="POST">
+                <div class="Titulo">
+                    <label for="torneoName">NOMBRE DEL TORNEO</label>
+                    <input type="text" id="torneoName" name="torneoName" required>
+                    <button type="submit">CREAR TORNEO</button>
                 </div>
-                <div class="botonGestion">
-                    <a href="EquiposIndex">+ AÑADIR EQUIPO</a>
-                </div>
+                <br>
+
                 <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
+                    <a href="/anadirEquipo">AÑADIR EQUIPOS AL TORNEO</a>
                 </div>
             </form>
         </div>
     </div>
-
-
-
-    <#include "/templates/footer.ftl">
+<#include "/templates/footer.ftl">
 
 </body>
 </html>

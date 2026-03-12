@@ -15,28 +15,41 @@
 
         <div class="formulario">
             <form>
-                <div class="titulo">
-                    <label for="torneo">NOMBRE DEL EQUIPO</label>
-                    <input type="text" name="torneo">
+                <div class="Titulo">
+                    <label for="TORNEO">NOMBRE DEL EQUIPO</label>
+                </div>
+                <div>
+                    <br>
+                    <input type="text" name="TORNEO">
                 </div>
 
-                <div class="addOpcion">
+                <br>
+                <div class="añadirOpcion">
                     <div class="botonGestion">
-                        <a href="EquiposIndex.html">CAMBIAR ESCUDO</a>
-                    </div>
-                    <div class="foto">
-                        <img src="/imgs/nofotolnfs.jpg" width="100px">
-                    </div>
-                    <div class="botonGestion">
-                        <a href="ListaJugador.html">AÑADIR JUGADOR</a>
+                    <a href="/listarJugadores/1">AÑADIR JUGADOR</a>
+                    <br>
                     </div>
                     <div class="botonGestion">
-                        <a href="ListaJugador.html">ELIMINAR JUGADOR</a>
+                        <a href="/listarJugadores/1">ELIMINAR JUGADOR</a>
+                        <br>
                     </div>
                 </div>
+
+
+                <br>
+                <#list listaJugadores as jugador>
+                     <div class="opciones">
+                        <label for="equipo_${equipo.idEquipo}"><img src="/img/Persona.jpg" width="40px"> ${equipo.equipoName} </label>
+                        <input type="radio" name="idEquipo" id="equipo_${equipo.idEquipo}" value="${equipo.idEquipo}">
+
+                    </div>
+                </#list>
+
                 <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">GUARDAR CAMBIOS</a>
+                    <a href="/gestionEquipos">GUARDAR CAMBIOS</a>
                 </div>
+
+
 
             </form>
         </div>

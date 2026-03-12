@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,24 +13,53 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
+
         <div class="formulario">
             <form>
-                <div class="titulo">
+                <div class="Titulo">
                     <label for="TORNEO">NOMBRE DEL TORNEO</label>
-                    <input type="text" name="torneo">
                 </div>
-                <div class="addOpcion">
-                    <div class="botonGestion">
-                         <a href="EquiposIndex.html">AÑADIR EQUIPO</a>
-                    </div>
+                <div>
                     <br>
+                    <input type="text" name="TORNEO">
+                </div>
+
+                <br>
+                <div class="añadirOpcion">
                     <div class="botonGestion">
-                        <a href="borrarTorneo.html"> ELIMINAR EQUIPO</a>
+                         <a href="/anadirEquipo">AÑADIR EQUIPO</a>
                     </div>
+
+                    <div class="botonGestion">
+                        <a href="/eliminarEquipo"> ELIMINAR EQUIPO</a>
+                    </div>
+
                 </div>
+
+                <br>
+                  <!--CONTENIDO-->
+                    <div class="contenido">
+                        <div class="imgIndex"><img src="imgs/LOGOFS5.jpg" alt=""></div>
+                        <div class="botonesMain">
+                        <#list torneos as torneo>
+                            <div class="boton">
+                                <span>COMPETICIONES</span>
+                            </div>
+                            <div class="botonPeque">
+                                <span>${torneo.torneoName}</span>
+                            </div>
+                        </#list>
+                        </div>
+                    </div>
+
                 <div class="guardar">
-                    <a href="OpcionesDeGestión.html">GUARDAR CAMBIOS</a>
+                    <a href="/listaEditarTorneos">EDITAR</a>
                 </div>
+
+               <!--<button type="submit" class="crear">
+                    GUARDAR CAMBIOS
+               </button>-->
+
             </form>
         </div>
     </div>

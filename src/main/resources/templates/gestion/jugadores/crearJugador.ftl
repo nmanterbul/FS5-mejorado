@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,29 +13,47 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
+
         <div class="formulario">
-            <form>
-                <div class="titulo">
-                    <label for="torneo">NOMBRE DEL JUGADOR</label>
-                    <input type="text" name="torneo">
+            <form method="POST">
+                <div class="Titulo">
+                    <label for="jugadorName">NOMBRE DEL JUGADOR</label>
+                    <input type="text" name="jugadorName" value="jugadorName">
                 </div>
-                <div class="addOpcion">
+                <div>
+                    <br>
+                </div>
+
+                <br>
+                <div class="añadirOpcion">
                     <div class="botonGestion">
-                        <a href="EquiposIndex.html">AÑADIR FOTO JUGADOR</a>
+                         <a href="/equiposIndex">AÑADIR FOTO JUGADOR</a>
                     </div>
+
                 </div>
+                <br>
+                    <div class="opciones">
+
+                       <input type="radio" name="pos" value="posicion"> Portero
+                       <input type="radio" name="pos" value="posicion"> Cierre
+                       <input type="radio" name="pos" value="posicion"> Ala
+                       <input type="radio" name="pos" value="posicion"> Pivot
+                    </div>
+                <br>
+
+                <br>
+
                 <div class="foto">
-                    <img src="/imgs/nofotolnfs.jpg" width="100px">
+                    <img src="/img/Persona.jpg" width="100px">
                 </div>
-                <div class="opciones">
-                    <input type="radio" name="pos"> Portero
-                    <input type="radio" name="pos"> Cierre
-                    <input type="radio" name="pos"> Ala
-                    <input type="radio" name="pos"> Pivot
-                </div>
+
+
                 <div class="guardar">
-                    <a href="OpcionesDeJugadores.html">CREAR JUGADOR</a>
+                    <a href="/listarJugadores/1">CREAR JUGADOR</a>
                 </div>
+
+
+
             </form>
         </div>
     </div>

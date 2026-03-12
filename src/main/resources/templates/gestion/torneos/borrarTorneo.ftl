@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,23 +13,33 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
+
         <div class="formulario">
             <form>
-                <div class="titulo">
-                    <label for="torneo">TORNEOS</label>
+                <div class="Titulo">
+                    <label for="TORNEO">TORNEOS</label>
                 </div>
+
+                <br>
                 <div class="opciones">
-                   <input type="checkbox" name="pos"> Barcelona <br>
-                   <input type="checkbox" name="pos"> Barcelona <br>
-                   <input type="checkbox" name="pos"> Barcelona <br>
-                   <input type="checkbox" name="pos"> Barcelona <br>
+                    <label for="torneo">LIGA </label>
+                    <input type="radio" name="torneo">
+                    <label for="torneo"> PLAY OFF TÍTULO</label>
+                    <input type="radio" name="torneo">
+                    <label for="torneo"> PLAY OFF ASCENSO </label>
+                    <input type="radio" name="torneo">
+
+
                 </div>
-                <div class="guardar">
-                    <a href="OpcionesDeEquipo.html">ELIMINAR</a>
+
+                <div class="eliminar">
+                    <a href="/gestionTorneos">ELIMINAR </a>
+                    <span></span>
                 </div>
             </form>
         </div>
     </div>
+
 
     <#include "/templates/footer.ftl">
 

@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/gestion.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/gestion.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
 <body>
 
-<#include "/templates/cabecera.ftl">
+    <#include "/templates/cabecera.ftl">
+
     <div class="contenedor">
 
         <div class="cuadrado">
-            <a href="/crearTorneo">CREAR</a>
+            <a href="/admin/crearTorneo">CREAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/editarTorneo">EDITAR</a>
+            <a href="/admin/listaEditaTorneo">EDITAR</a>
         </div>
         <div class="cuadrado">
-            <a href="/borrarTorneo">BORRAR</a>
+            <a href="/admin/borrarTorneo">BORRAR</a>
         </div>
 
     </div>
 
-<#include "/templates/footer.ftl">
+   <#include "/templates/footer.ftl">
 
 </body>
 </html>

@@ -1,0 +1,115 @@
+.contenido{
+width: 60%;
+margin: auto;
+margin-top: 40px;
+text-align: center;
+}
+
+.menu-tabla{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.menu-item{
+    padding: 15px 30px;
+    border: 1px solid #3b3b9c;
+    text-decoration: none;
+    color: #1e1e5a;
+    font-weight: bold;
+    background-color: white;
+}
+
+.menu-item.activo{
+    background-color: #1e1e5a;
+    color: white;
+}
+
+.tabla-container{
+display: flex;
+justify-content: center;
+align-items: stretch;
+}
+
+.tabla-clasificacion{
+width: 70%;
+border: 2px solid #333;
+border-collapse: collapse;
+}
+
+.tabla-clasificacion tr{
+height: 50px;
+}
+
+.tabla-clasificacion td{
+padding: 5px;
+}
+
+.posicion{
+font-size: 22px;
+font-weight: bold;
+width: 10%;
+}
+
+.logo img{
+width: 30px;
+}
+
+.nombre{
+text-align: left;
+font-size: 16px;
+}
+
+.nombre a{
+text-decoration: none;
+color: black;
+}
+
+.puntos{
+font-size: 20px;
+font-weight: bold;
+width: 15%;
+}
+
+/* LEYENDA DERECHA */
+
+.leyenda{
+width: 80px;
+display: flex;
+flex-direction: column;
+}
+
+.playoff{
+background-color: #31b954;
+flex: 1;
+writing-mode: vertical-rl;
+text-align: center;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.segura{
+background-color: #e6dda0;
+flex: 2;
+writing-mode: vertical-rl;
+text-align: center;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.descenso{
+background-color: #d60000;
+color: white;
+flex: 1;
+writing-mode: vertical-rl;
+text-align: center;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+

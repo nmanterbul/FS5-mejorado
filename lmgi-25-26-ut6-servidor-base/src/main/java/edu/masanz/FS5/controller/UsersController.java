@@ -10,7 +10,7 @@ import java.util.Map;
 public class UsersController {
 
 
-    public static void login(Context context){
+    public static void voylogin(Context context){
         Map<String, Object> model = new HashMap<>();
         model.put("username", "username");
         model.put("pass", "pass");
@@ -29,4 +29,6 @@ public class UsersController {
         }
 
     }
+
+
 }

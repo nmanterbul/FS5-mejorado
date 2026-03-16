@@ -52,8 +52,10 @@ public class FS5controller {
         int idTorneo = Integer.parseInt(context.pathParam("id"));
         Map<String, Object> model = new HashMap<>();
         List<Equipo> listaEquipos = EquiposService.obtenerEquipos(idTorneo);
+        TreeSet<Equipo> listaOrdenada = new TreeSet<>(Comparator.comparing(Equipo::getPosicion));
+        listaOrdenada.addAll(listaEquipos);
         model.put("backURL", "/competicionesIndex");
-        model.put("listaEquipos", listaEquipos);
+        model.put("listaEquipos", listaOrdenada);
 
         context.render("/templates/competiciones/tablaClasificacion.ftl", model);
 
@@ -66,7 +68,7 @@ public class FS5controller {
 
         List<Jugador> jugador = JugadorService.obtenerJugadores(idTorneo);
         List<Equipo> equipos = EquiposService.obtenerEquipos(idTorneo);
-        TreeSet<Jugador> listaOrdenada = new TreeSet<>(Comparator.comparing(Jugador::getPosicionGoleadores));
+        TreeSet<Jugador> listaOrdenada = new TreeSet<>(Comparator.comparing(Jugador::getNumGoles).reversed());
         listaOrdenada.addAll(jugador);
         model.put("backURL","/competicionesIndex");
         model.put("listaJugadores",listaOrdenada);
@@ -79,6 +81,10 @@ public class FS5controller {
 
     public static void servirEquiposIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
+        List<Torneo> listaTorneos = TorneoService.obtenerTorneos();
+
+        model.put("backURL","/");
+        model.put("listaTorneos",listaTorneos);
         context.render("templates/equipos/equiposIndex.ftl", model);
     }
 
@@ -160,7 +166,7 @@ public class FS5controller {
         boolean exito = TorneoService.crearTorneo(torneoName);
 
         if (exito) {
-            context.redirect("/admin/listaTorneos"); // Redirige a la lista de torneos
+            context.redirect("/admin/gestionTorneos"); // Redirige a la lista de torneos
         } else {
             context.redirect("/error"); // O página de error que tengas
         }
@@ -329,7 +335,6 @@ public class FS5controller {
     public static void borrarEquipo(@NotNull Context context) {
         int idEquipo = Integer.parseInt(context.pathParam("id"));
 
-
         Map<String, Object> model = new HashMap<>();
         model.put("backURl","/listaBorrarJugadores");
         model.put("idEquipo",idEquipo);
@@ -348,11 +353,11 @@ public class FS5controller {
         Map<String, Object> model = new HashMap<>();
         Jugador jugador = new Jugador();
         int idTorneo = Integer.parseInt(context.pathParam("idTorneo"));
-        int idEquipo = Integer.parseInt(context.pathParam("idEquipo"));
+
         model.put("backURL", "/admin/gestionJugadores");
         model.put("jugador", jugador);
         model.put("idTorneo",idTorneo);
-        model.put("idEquipo",idEquipo);
+
 
         context.render("/templates/gestion/jugadores/crearJugador.ftl", model);
     }
@@ -441,19 +446,22 @@ public class FS5controller {
         List<Jugador> listaJugadores = JugadorService.obtenerJugadores(idTorneo);
         model.put("backURL", "/admin/gestionJugadores");
         model.put("listaJugadores", listaJugadores);
+        model.put("idJugador", listaJugadores);
 
         context.render("/templates/gestion/jugadores/listaBorrarJugadores.ftl", model);
 
     }
 
     public static void servirBorrarJugador(@NotNull Context context) {
-        int idTorneo = Integer.parseInt(context.pathParam("id"));
-        int idJugador = Integer.parseInt(context.formParam("idJugador"));
+
+        int idJugador = Integer.parseInt(context.pathParam("id"));
+
         Map<String, Object> model = new HashMap<>();
-        List<Jugador> listaJugadores = JugadorService.obtenerJugadores(idTorneo);
-        model.put("backURL", "/admin/gestionJugadores");
-        model.put("listaJugadores", listaJugadores);
+        Jugador jugador = JugadorService.obtenerJugador(idJugador);
+        model.put("backURL", "/admin/listaBorrarJugadores/1");
         model.put("idJugador",idJugador);
+        model.put("jugadorName", jugador.getJugadorName());
+
 
         context.render("/templates/gestion/jugadores/borrarJugador.ftl", model);
 
@@ -462,14 +470,15 @@ public class FS5controller {
     public static void borrarJugador(@NotNull Context context) {
         int idJugador = Integer.parseInt(context.pathParam("id"));
 
-        String jugadorName = context.formParam("jugadorName");
+
 
         Map<String, Object> model = new HashMap<>();
         model.put("backURl","/listaBorrarJugadores");
-        model.put("idTorneo",idJugador);
+        model.put("idJugador",idJugador);
 
-        if (JugadorService.borrarJugador(idJugador,jugadorName)){
-            context.redirect("/listarJugadores");
+        if (JugadorService.borrarJugador(idJugador)){
+            context.redirect("/gestionJugadores");
+
         }else{
             context.render("/templates/error.ftl");
         }

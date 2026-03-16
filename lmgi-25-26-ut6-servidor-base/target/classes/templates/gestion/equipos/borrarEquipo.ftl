@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="guardar">
-                    <a href="/admin/gestionEquipos">ELIMINAR</a>
+                    <button type="submit">ELIMINAR EQUIPO</button>
                 </div>
 
             </tr>

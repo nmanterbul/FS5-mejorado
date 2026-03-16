@@ -23,7 +23,7 @@
 
                 <br>
                 <div class="botonGestion">
-                    <a href="/admin/listarJugadores/1">AÑADIR JUGADOR</a>
+                    <a href="/admin/listarJugadores/${id}">AÑADIR JUGADOR</a>
                     <br>
                 </div>
 

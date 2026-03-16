@@ -21,8 +21,8 @@ public class JugadorService {
         return JugadoresDao.actualizarJugador(idJugador, jugadorName, posicion);
     }
 
-    public static boolean borrarJugador(int idJugador, String jugadorName) {
-        return JugadoresDao.borrarJugador(idJugador, jugadorName);
+    public static boolean borrarJugador(int idJugador) {
+        return JugadoresDao.borrarJugador(idJugador);
     }
 
     public static List<Jugador> obtenerJugadores(int idTorneo) {

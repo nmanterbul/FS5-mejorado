@@ -19,12 +19,11 @@
             <div class="boton">
                 <span>EQUIPOS</span>
             </div>
-            <div class="botonPeque">
-                <a href="/tablaEquipos/1"><span>1º DIVISIÓN</span></a>
-            </div>
-            <div class="botonPeque">
-                <a href="/tablaEquipos/1"><span>2º DIVISIÓN</span></a>
-            </div>
+            <#list listaTorneos as torneo>
+                <div class="botonPeque">
+                    <a href="/tablaEquipos/${torneo.idTorneo}"><span>${torneo.torneoName}</span></a>
+                </div>
+            </#list>
         </div>
     </div>
 

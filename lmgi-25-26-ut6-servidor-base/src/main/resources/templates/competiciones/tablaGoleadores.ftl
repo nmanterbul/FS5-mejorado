@@ -24,13 +24,13 @@
        </a>
 
        <table class="tabla-goleadores">
-       <#assign contador = 1>
+
            <#list listaJugadores as jugador>
-                <#if contador gt 11>
+
            <tr>
-                <#assign contador = contador + 1>
+
                        <td class="posicion">
-                           ${jugador.posicionGoleador}
+                           ${jugador.posicionGoleadores}
                        </td>
 
                        <td class="jugador">
@@ -55,8 +55,8 @@
 
                      </td>
 
-                     </tr>
-                </#if>
+           </tr>
+
            </#list>
 
        </table>

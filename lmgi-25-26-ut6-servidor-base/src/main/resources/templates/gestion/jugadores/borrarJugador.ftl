@@ -15,29 +15,31 @@
 
     <div class="contenedor">
         <div class="formulario">
-        <table>
+            <table>
 
-            <form method="POST" action="/admin/borrarJugador/{idJugador}">
+                <form method="POST" action="/admin/borrarJugador/${idJugador}">
 
-                <#list listaJugadores as jugador>
-                <tr>
-                <td>
-                    ${jugador.idJugador}
-                </td>
-                <td>
-                    <div class="Titulo">
-                        <input type="radio" id="jugadorName" name="jugadorName">
-                        <label for="jugadorName">${jugador.jugadorName}</label>
-                    </div>
-                </td>
 
-                    <br>
-                    <br>
-                </tr>
-                    <div class="eliminar">
-                         <button type="submit">ELIMINAR</button>
-                    </div>
-            </form>
+                    <tr>
+                        <td>
+                            ${idJugador}
+                        </td>
+                        <td>
+                            <div class="Titulo">
+                                <input type="radio" id="jugadorName" name="jugadorName">
+                                <label for="jugadorName">${jugadorName}</label>
+                            </div>
+                        </td>
+
+                            <br>
+                            <br>
+                    </tr>
+                        <div class="eliminar">
+                             <button type="submit">ELIMINAR</button>
+                        </div>
+
+                </form>
+            </table>
         </div>
     </div>
 

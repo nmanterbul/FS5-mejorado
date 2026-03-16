@@ -38,7 +38,7 @@ public class Main {
 
         //ZONA DE ADMINISTRADOR
         app.get("/admin/gestion", FS5controller::servirGestion);
-        app.post("/admin/gestion", UsersController::login);
+        app.post("/admin/gestion", UsersController::voylogin);
         app.get("/admin/gestionTorneos", FS5controller::servirGestionTorneos);
         app.get("/admin/gestionEquipos", FS5controller::servirGestionEquipos);
         app.get("/admin/gestionJugadores", FS5controller::servirGestionJugadores);

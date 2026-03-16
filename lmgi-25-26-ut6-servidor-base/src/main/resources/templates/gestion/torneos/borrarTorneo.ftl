@@ -15,11 +15,12 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form>
-                <#list listaTorneos as torneo>
+            <form method="POST" action="/admin/borrarTorneo">
+
                 <div class="Titulo">
                     <label for="TORNEO">TORNEOS</label>
                 </div>
+                <#list listaTorneos as torneo>
 
                 <br>
                 <div class="opciones">
@@ -28,8 +29,7 @@
                 </div>
 
                 <div class="eliminar">
-                    <a href="/admin/listaTorneos">ELIMINAR </a>
-                    <span></span>
+                    <button type="submit">ELIMINAR </button>
                 </div>
                </#list>
             </form>

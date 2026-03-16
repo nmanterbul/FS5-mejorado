@@ -14,7 +14,7 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form method="GET" action="/admin/borrarJugador/${jugador.idJugador}">
+            <form method="GET" action="/admin/borrarJugador/${idJugador}">
                 <div class="Titulo">
                     <label for="TORNEO"> JUGADORES</label>
                 </div>

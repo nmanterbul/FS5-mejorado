@@ -78,9 +78,9 @@ public class JugadoresDao {
         }
     }
 
-    public static boolean borrarJugador(int idJugador, String nombre) {
+    public static boolean borrarJugador(int idJugador) {
         String update = "DELETE FROM jugadores WHERE idJugador = ?";
-        Object[] params = {idJugador,nombre};
+        Object[] params = {idJugador};
         int result = ConnectionManager.ejecutarUpdateSQL(update, params);
 
         if (result > 0){

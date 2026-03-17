@@ -11,7 +11,7 @@
 <body>
 
 <#include "/templates/cabecera.ftl">
-<form action="GET" action="/editaTorneo/${idTorneo}">
+<form action="GET" action="/paginaEnProceso">
     <#list listaTorneos as torneo>
         <div class="añadirOpcion">
             <div class="torneo-item">

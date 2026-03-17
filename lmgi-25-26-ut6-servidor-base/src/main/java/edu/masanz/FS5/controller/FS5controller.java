@@ -82,9 +82,10 @@ public class FS5controller {
     public static void servirEquiposIndex(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         List<Torneo> listaTorneos = TorneoService.obtenerTorneos();
-
+        TreeSet<Torneo> torneosOrdenados = new TreeSet<>(Comparator.comparing(Torneo::getId));
+        torneosOrdenados.addAll(listaTorneos);
         model.put("backURL","/");
-        model.put("listaTorneos",listaTorneos);
+        model.put("listaTorneos",torneosOrdenados);
         context.render("templates/equipos/equiposIndex.ftl", model);
     }
 
@@ -221,7 +222,8 @@ public class FS5controller {
     }
 
     public static void eliminarEquipo(@NotNull Context context){
-
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL","/admin/listaEditaTorneo");
         int idTorneo = Integer.parseInt(context.pathParam("id"));
 
         List<String> equipos = context.formParams("idEquipo");
@@ -231,6 +233,7 @@ public class FS5controller {
             TorneoService.eliminarEquipoTorneo(idTorneo, Integer.parseInt(idEquipo));
 
         }
+
 
     }
 
@@ -250,7 +253,7 @@ public class FS5controller {
         String torneoName = context.formParam("torneoName");
 
         if (TorneoService.borrarTorneo(torneoName)){
-            context.redirect("/admin/listarJugadores");
+            context.redirect("/admin/gestionTorneos");
         }else{
             context.render("/templates/error.ftl");
         }
@@ -262,7 +265,7 @@ public class FS5controller {
     public static void servirCrearEquipo(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
         model.put("backURL", "/admin/gestionEquipos");
-        int idTorneo = Integer.parseInt(context.pathParam("id")); // <-- obtener id de la URL
+        int idTorneo = Integer.parseInt(context.pathParam("id"));
         model.put("id", idTorneo);
         context.render("/templates/gestion/equipos/crearEquipo.ftl", model);
     }
@@ -321,25 +324,28 @@ public class FS5controller {
 
     public static void servirBorrarEquipo(@NotNull Context context) {
         Map<String, Object> model = new HashMap<>();
-        int idTorneo = Integer.parseInt(context.pathParam("id"));
+        int idTorneo = Integer.parseInt(context.pathParam("idTorneo"));
         List<Equipo> equipo = EquiposService.obtenerEquipos(idTorneo);
 
         model.put("backURL", "/admin/gestionEquipos");
         model.put("listaEquipos", equipo);
-        model.put("id", idTorneo);
+        model.put("idTorneo", idTorneo);
 
 
         context.render("/templates/gestion/equipos/borrarEquipo.ftl", model);
     }
 
     public static void borrarEquipo(@NotNull Context context) {
-        int idEquipo = Integer.parseInt(context.pathParam("id"));
+        int idTorneo = Integer.parseInt(context.pathParam("id"));
+
+        String equipoName = context.formParam("equipoName");
 
         Map<String, Object> model = new HashMap<>();
         model.put("backURl","/listaBorrarJugadores");
-        model.put("idEquipo",idEquipo);
 
-        if (EquiposService.borrarEquipo(idEquipo)){
+        model.put("idTorneo",idTorneo);
+
+        if (EquiposService.borrarEquipo(idTorneo,equipoName)){
             context.redirect("/admin/gestionEquipos");
         }else{
             context.render("/templates/error.ftl");
@@ -557,5 +563,9 @@ public class FS5controller {
     }
 
 
-
+    public static void servirPaginaEnProceso(@NotNull Context context) {
+        Map<String, Object> model = new HashMap<>();
+        model.put("backURL", "/admin/gestion");
+        context.redirect("/paginaEnProceso");
+    }
 }

@@ -21,7 +21,7 @@
             </div>
             <#list listaTorneos as torneo>
                 <div class="botonPeque">
-                    <a href="/tablaEquipos/${torneo.idTorneo}"><span>${torneo.torneoName}</span></a>
+                    <a href="/tablaEquipos/1"><span>${torneo.torneoName}</span></a>
                 </div>
             </#list>
         </div>

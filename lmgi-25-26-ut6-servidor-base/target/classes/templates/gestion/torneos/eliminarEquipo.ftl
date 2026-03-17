@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Equipos</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/eliminarEquipo.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/crearGestion.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>

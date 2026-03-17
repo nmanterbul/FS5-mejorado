@@ -21,17 +21,16 @@
                     <label for="TORNEO">TORNEOS</label>
                 </div>
                 <#list listaTorneos as torneo>
-
                 <br>
-                <div class="opciones">
-                    <label for="torneoName">${torneo.torneoName}</label>
-                    <input type="radio" name="torneoName" id="torneoName" value="${torneo.torneoName}">
-                </div>
+                    <div class="opciones">
+                        <label for="torneoName">${torneo.torneoName}</label>
+                        <input type="radio" name="torneoName" id="torneoName" value="${torneo.torneoName}">
+                    </div>
+                 </#list>
+                    <div class="eliminar">
+                        <button type="submit">ELIMINAR </button>
+                    </div>
 
-                <div class="eliminar">
-                    <button type="submit">ELIMINAR </button>
-                </div>
-               </#list>
             </form>
         </div>
     </div>

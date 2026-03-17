@@ -19,13 +19,14 @@ CREATE TABLE equipos(
 
 CREATE TABLE jugadores(
 	idJugador INT auto_increment,
-    idEquipo int,
+    idEquipo int default 0,
     idTorneo int,
     jugadorName varchar(50) not null,
     posicion varchar(50),
     posicionGoleadores int,
     numGoles int,
-    primary key(idJugador)
+    primary key(idJugador),
+    constraint foreign key(idEquipo) references equipos(idEquipo) on delete set null
 );
 
 create table torneos(

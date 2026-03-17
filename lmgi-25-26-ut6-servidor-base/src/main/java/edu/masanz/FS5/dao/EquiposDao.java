@@ -108,9 +108,9 @@ public class EquiposDao {
         return listaEquipo;
     }
 
-    public static boolean borrarEquipo(int idEquipo) {
-        String delete = "DELETE FROM equipos WHERE idEquipo = ?";
-        Object[] params = {idEquipo};
+    public static boolean borrarEquipo(int idTorneo, String equipoName) {
+        String delete = "DELETE FROM equipos WHERE idTorneo = ? AND equipoName = ?";
+        Object[] params = {idTorneo, equipoName};
         long result = ConnectionManager.ejecutarUpdateSQL(delete, params);
 
         if (result > 0){
@@ -120,10 +120,11 @@ public class EquiposDao {
         }
     }
 
-    public static boolean crearTorneo(int idTorneo, String equipoName) {
-        String sql = "INSERT INTO equipos (idTorneo, jugadorName) VALUES (?,?)";
+    public static boolean crearEquipo(int idTorneo, String equipoName) {
+        String sql = "INSERT INTO equipos (idTorneo, jugadorName, cantidadJug, cantidadPuntos, posicion) " +
+                "VALUES (?,?,?,?,?)";
 
-        Object[] params = { idTorneo,equipoName};
+        Object[] params = {idTorneo,equipoName, 0, 0, 0};
         long result = ConnectionManager.ejecutarInsertSQL(sql,params);
 
 

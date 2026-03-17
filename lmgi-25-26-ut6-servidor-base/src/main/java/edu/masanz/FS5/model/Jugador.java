@@ -44,7 +44,10 @@ public class Jugador {
         return idEquipo;
     }
 
-    public void setIdEquipo(int idEquipo) {
+    public void setIdEquipo(int idEquipo){
+        if (idEquipo == 0){
+
+        }
         this.idEquipo = idEquipo;
     }
 

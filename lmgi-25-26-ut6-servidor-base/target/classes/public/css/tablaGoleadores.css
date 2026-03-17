@@ -1,67 +1,94 @@
-menu-tabla{
-display;
-justify-content;
-margin-top:20px;
+.contenido {
+    width: 70%; /* Pixka bat zabalagoa izen luzeak kabitzeko */
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.menu-item{
-padding:15px 30px;
-border:1px solid #4a4aff;
-text-decoration;
-color:#1e1e5a;
-font-weight;
-background;
+/* NABIGAZIO MENUA */
+.menu-tabla {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
-.menu-item.activo{
-background:#1e1e5a;
-color;
+.menu-item {
+    padding: 15px 30px;
+    border: 1px solid #3b3b9c;
+    text-decoration: none;
+    color: #1e1e5a;
+    font-weight: bold;
+    background-color: white;
+    transition: 0.3s;
 }
 
-.contenedor-goleadores{
-display;
-justify-content;
-margin-top:40px;
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-item.activo {
+    background-color: #1e1e5a;
+    color: white;
+}
+
+/* TAULA ETA LEYENDA KONBINAZIOA */
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Leyenda taularen altuera berera egokitzeko */
+    min-height: 400px;
+}
+
+/* TAULAREN ESTILOA */
+.tabla-goleadores {
+    width: 85%;
+    border: 2px solid #333;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabla-goleadores tr {
+    height: 60px; /* Pixka bat altuagoa jokalariak ondo ikusteko */
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-goleadores tr:nth-child(even) {
+    background-color: #fafafa; /* Errenkada bakoitiak kolore pixka batekin */
+}
+
+.tabla-goleadores td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* POSIZIOA (Zenbakia) */
+.posicion {
+    font-size: 24px;
+    font-weight: bold;
+    width: 8%;
+    color: #555;
 }
 
 
-.tabla-goleadores{
-border:2px solid black;
-padding:20px;
-background:#f2f2f2;
+.nombre-jugador {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40%;
+}
+
+.nombre-equipo {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    width: 30%;
 }
 
 
-.tabla-goleadores tr{
-height:40px;
-}
 
 
-.posicion{
-font-size:28px;
-font-weight;
-padding-right:20px;
-}
 
 
-.jugador{
-width:120px;
-font-size:18px;
-}
-
-.numGoles{
-width:120px;
-font-size:18px;
-}
 
 
-.equipo{
-width:160px;
-font-size:18px;
-}
-
-
-.escudo img{
-width:30px;
-height;
-}

@@ -28,11 +28,11 @@ public class EquiposService {
         return EquiposDao.obtenerEquiposNoEnTorneo(idTorneo);
     }
 
-    public static boolean borrarEquipo(int idEquipo) {
-        return EquiposDao.borrarEquipo(idEquipo);
+    public static boolean borrarEquipo(int idTorneo, String equipoName) {
+        return EquiposDao.borrarEquipo(idTorneo, equipoName);
     }
 
     public static boolean crearEquipo(int idTorneo, String equipoName) {
-        return EquiposDao.crearTorneo(idTorneo, equipoName);
+        return EquiposDao.crearEquipo(idTorneo, equipoName);
     }
 }

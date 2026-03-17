@@ -14,7 +14,7 @@
     <div class="contenedor">
 
         <div class="formulario">
-            <form method="GET" action="/">
+            <form method="POST" action="/paginaEnProceso">
                 <div class="Titulo">
                     <label for="TORNEO">NOMBRE DEL EQUIPO</label>
                 </div>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="guardar">
-                    <a href="/admin/editarEquipo">EDITAR</a>
+                    <button type="submit">EDITAR</button>
                 </div>
 
 

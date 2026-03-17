@@ -45,9 +45,7 @@ text-align: center;
     cursor:pointer;
 }
 
-.flecha-izq{
-    transform: rotate(180deg);
-}
+
 
 .contenido h2{
 font-family: Arial, Helvetica, sans-serif;

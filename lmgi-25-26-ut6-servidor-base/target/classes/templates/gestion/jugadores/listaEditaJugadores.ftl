@@ -14,7 +14,7 @@
     <div class="contenedor">
 
         <div class="formulario">
-
+        <form method="POST" action="/paginaEnProceso">
                 <div class="Titulo">
                     <label for="TORNEO"> JUGADORES</label>
                 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet"  type="text/css" href="/css/crearGestion.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/crearGestion.css"/>
     <link rel="stylesheet" type="text/css" href="/css/cabecera.css"/>
     <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
 </head>
@@ -12,34 +12,25 @@
     <#include "/templates/cabecera.ftl">
 
     <div class="contenedor">
-    <table>
+
         <div class="formulario">
-            <form method="POST" action="/admin/borrarEquipo/${id}">
-                <div class="Titulo">
-                   <span>EQUIPOS</span>
-                </div>
-            <#list listaEquipos as equipo>
-            <tr>
-                <td>
-                    ${equipo.equipoName}
-                </td>
+            <form method="POST" action="/admin/borrarEquipo/${idTorneo}">
+                    <div class="Titulo">
+                       <span>EQUIPOS</span>
+                    </div>
+                <#list listaEquipos as equipo>
 
-                <br>
-                <div class="opciones">
-                     <input type="radio" name="equipoName" id="equipoName" value="equipoName">
-                    <label for="equipoName">${equipo.equipoName}</label>
-
-                </div>
-
-                <div class="guardar">
-                    <button type="submit">ELIMINAR EQUIPO</button>
-                </div>
-
-            </tr>
-            </#list>
+                    <div class="opciones">
+                         <input type="radio" name="equipoName" id="equipoName" value="${equipo.equipoName}">
+                         <label for="equipoName">${equipo.equipoName}</label>
+                    </div>
+                </#list>
+                    <div class="guardar">
+                        <button type="submit">ELIMINAR EQUIPO</button>
+                    </div>
             </form>
         </div>
-    </table>
+
     </div>
 
     <#include "/templates/footer.ftl">

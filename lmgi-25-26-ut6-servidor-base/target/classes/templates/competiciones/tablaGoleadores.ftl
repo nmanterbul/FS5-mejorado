@@ -11,18 +11,12 @@
 <body>
     <#include "/templates/cabecera.ftl">
 
-       <a href="/tablaJornadas/1/6" class="menu-item">
-           JORNADAS
-       </a>
-
-       <a href="/tablaClasificacion/1" class="menu-item">
-           CLASIFICACIÓN
-       </a>
-
-       <a href="/tablaGoleadores/1" class="menu-item activo">
-           TABLA DE GOLEADORES
-       </a>
-
+       <div class="menu-tabla">
+           <a href="/tablaJornadas/1/6" class="menu-item"> JORNADAS </a>
+           <a href="/tablaClasificacion/1" class="menu-item "> CLASIFICACIÓN </a>
+           <a href="/tablaGoleadores/1" class="menu-item activo"> TABLA DE GOLEADORES </a>
+       </div>
+        <#assign posicion = 1>
        <table class="tabla-goleadores">
 
            <#list listaJugadores as jugador>
@@ -30,9 +24,9 @@
            <tr>
 
                        <td class="posicion">
-                           ${jugador.posicionGoleadores}
+                           ${posicion}
                        </td>
-
+                       <#assign posicion = posicion + 1>
                        <td class="jugador">
                            ${jugador.jugadorName}
                        </td>
@@ -51,9 +45,6 @@
 
                      </td>
 
-                     <td class="logo">
-
-                     </td>
 
            </tr>
 
